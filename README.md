@@ -27,6 +27,7 @@ Telas:
 
 
 8. **Tela compra** (Mostrará um carro selecionado de maneira especificada com as especificações do carro, como por exemplo: Km Rodado, situação do carro, Ano do carro, modelo, tipo de cambio, numero de portas, Acionamento do carro);
+![Tela de Compra](https://user-images.githubusercontent.com/104398112/225469062-42303154-0525-4fe7-810f-4ccef3618c2e.png)
 
 
 
