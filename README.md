@@ -34,5 +34,5 @@ Valor.
 
 •	Tela de Perfil (  Mostrará a conta do usuário e opções de tirar o carro caso ele tenha sido vendido)
 
-•	Tela Sobre (  Mostra a historia sobre a empresa)
+•	Tela Sobre ( Mostra a historia sobre a empresa e a foto dos criadores do site )
 
