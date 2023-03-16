@@ -34,6 +34,7 @@ Telas:
 ![MER final](https://user-images.githubusercontent.com/104398112/225485384-7105643f-b734-4762-a54f-2e185a2c55ab.png)
 
 10. **Diagrama Enditade-Relacionamento (DER)**
+
 ![logico](https://user-images.githubusercontent.com/99701339/225765436-939ea9e8-7ab1-480f-995d-330bfb19a0f1.png)
 
 **OVERVIEW PROTOTIPO**
