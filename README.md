@@ -30,6 +30,8 @@ Telas:
 ![Tela de Compra](https://user-images.githubusercontent.com/104398112/225469062-42303154-0525-4fe7-810f-4ccef3618c2e.png)
 
 
+9. **Modelo de Entidade Relacional**
+![MER final](https://user-images.githubusercontent.com/104398112/225485384-7105643f-b734-4762-a54f-2e185a2c55ab.png)
 
 
 **OVERVIEW PROTOTIPO**
