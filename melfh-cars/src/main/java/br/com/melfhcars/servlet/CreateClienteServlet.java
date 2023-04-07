@@ -1,8 +1,6 @@
 package br.com.melfhcars.servlet;
-
 import br.com.melfhcars.dao.ClienteDAO;
 import br.com.melfhcars.model.Cliente;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,10 +15,10 @@ public class CreateClienteServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String clienteName = request.getParameter("cliente-name");
-        Cliente cliente = new Cliente();
+        var cliente = new Cliente();
         cliente.setNome(clienteName);
 
-         ClienteDAO clienteDAO = new ClienteDAO();
+        var clienteDAO = new ClienteDAO();
         clienteDAO.createCliente(cliente);
 
         System.out.println(clienteName);
