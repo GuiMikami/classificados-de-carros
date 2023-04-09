@@ -8,23 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/create-cliente")
+@WebServlet("/cadastro-cliente")
 public class CreateClienteServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        String clienteName = request.getParameter("cliente-name");
-        var cliente = new Cliente();
-        cliente.setNome(clienteName);
-
-        var clienteDAO = new ClienteDAO();
-        clienteDAO.createCliente(cliente);
-
-        System.out.println(clienteName);
-
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
-
 }
