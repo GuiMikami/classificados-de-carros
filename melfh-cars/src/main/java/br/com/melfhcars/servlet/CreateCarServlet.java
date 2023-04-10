@@ -19,7 +19,7 @@ public class CreateCarServlet extends HttpServlet {
         car.setModelo(carName);
 
         var carDAO = new Carro();
-        carDAO.createCar(carro);
+        //carDAO.createCar(Carro);
 
         System.out.println(carName);
 

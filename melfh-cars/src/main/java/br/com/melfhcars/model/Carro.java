@@ -1,6 +1,5 @@
 package br.com.melfhcars.model;
 
-import java.math.BigDecimal;
 
 public class Carro {
 
@@ -9,7 +8,7 @@ public class Carro {
     private int ano;
     private double km;
     private int finalPlaca;
-    private BigDecimal valor;
+    private double valor;
     private String municipio;
     private String uf;
 
@@ -56,11 +55,11 @@ public class Carro {
         this.finalPlaca = finalPlaca;
     }
 
-    public BigDecimal getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(BigDecimal valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 

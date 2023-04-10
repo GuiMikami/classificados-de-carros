@@ -2,11 +2,9 @@ package br.com.melfhcars.model;
 
 public class Cliente {
 
-
-
     private String nome;
     private int dataNascimento;
-    private int cpf;
+    private String cpf;
     private String genero;
     private String email;
     private String senha;
@@ -36,8 +34,12 @@ public class Cliente {
         this.dataNascimento = dataNascimento;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getGenero() {

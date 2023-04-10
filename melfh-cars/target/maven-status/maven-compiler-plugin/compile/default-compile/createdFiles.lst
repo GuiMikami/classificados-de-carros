@@ -1,4 +1,7 @@
-br\com\melfhcars\servlet\CreateClienteServlet.class
+br\com\melfhcars\servlet\LoginServlet.class
 br\com\melfhcars\dao\ClienteDAO.class
 br\com\melfhcars\model\Cliente.class
 br\com\melfhcars\servlet\CreateCarServlet.class
+br\com\melfhcars\model\Carro.class
+br\com\melfhcars\servlet\CreateClienteServlet.class
+br\com\melfhcars\dao\CarDAO.class
