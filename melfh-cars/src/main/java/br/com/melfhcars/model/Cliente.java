@@ -1,13 +1,13 @@
 package br.com.melfhcars.model;
 
-public class Cliente {
+public class Cliente extends Login {
+
 
     private String nome;
     private int dataNascimento;
     private String cpf;
     private String genero;
-    private String email;
-    private String senha;
+
     private String logradouro;
     private String estado;
     private String cep;
@@ -50,21 +50,6 @@ public class Cliente {
         this.genero = genero;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 
     public String getLogradouro() {
         return logradouro;
