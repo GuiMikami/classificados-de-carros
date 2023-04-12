@@ -4,7 +4,8 @@ public class Cliente extends Login {
 
 
     private String nome;
-    private int dataNascimento;
+
+    private String dataNascimento;
     private String cpf;
     private String genero;
 
@@ -26,11 +27,11 @@ public class Cliente extends Login {
         this.nome = nome;
     }
 
-    public int getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(int dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
