@@ -18,14 +18,19 @@ public class CreateClienteServlet extends HttpServlet {
         String cpf = request.getParameter("cpf");
         String email = request.getParameter("email");
         String senha = request.getParameter("senha");
-        String celular = request.getParameter("celu+-lar");
-
+        String celular = request.getParameter("celular");
+        String estado = request.getParameter("estado");
+        String genero = request.getParameter("genero");
+        String datanascimento = request.getParameter("dataNasc");
         var cliente = new Cliente();
         cliente.setNome(clienteName);
         cliente.setCpf(cpf);
         cliente.setEmail(email);
         cliente.setSenha(senha);
         cliente.setContato(celular);
+        cliente.setEstado(estado);
+        cliente.setGenero(genero);
+        cliente.setDataNascimento(datanascimento);
 
         var clienteDAO = new ClienteDAO();
         clienteDAO.createCliente(cliente);

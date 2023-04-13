@@ -3,6 +3,11 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+
+  <welcome-files>
+    <welcome-files>home.html</welcome-files>
+  </welcome-files>
+
   <display-name>Archetype Created Web Application</display-name>
 
   <listener>
