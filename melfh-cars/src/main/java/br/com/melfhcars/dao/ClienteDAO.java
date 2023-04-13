@@ -16,11 +16,11 @@ public class ClienteDAO {
             System.out.println("sucess in connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1, cliente.getNome());
+            preparedStatement.setString(1,cliente.getNome());
             preparedStatement.setString(2,cliente.getCpf());
             preparedStatement.setString(3,cliente.getContato());
             preparedStatement.setString(4,cliente.getEmail());
-            preparedStatement.setString(5, cliente.getSenha());
+            preparedStatement.setString(5,cliente.getSenha());
             preparedStatement.setString(6,cliente.getGenero());
             preparedStatement.setString(7,cliente.getEstado());
             preparedStatement.setString(8,cliente.getDataNascimento());

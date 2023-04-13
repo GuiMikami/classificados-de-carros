@@ -21,7 +21,7 @@ public class CreateClienteServlet extends HttpServlet {
         String celular = request.getParameter("celular");
         String estado = request.getParameter("estado");
         String genero = request.getParameter("genero");
-        
+        String datanascimento = request.getParameter("dataNasc");
         var cliente = new Cliente();
         cliente.setNome(clienteName);
         cliente.setCpf(cpf);
@@ -30,7 +30,7 @@ public class CreateClienteServlet extends HttpServlet {
         cliente.setContato(celular);
         cliente.setEstado(estado);
         cliente.setGenero(genero);
-        cliente.setDataNascimento();
+        cliente.setDataNascimento(datanascimento);
 
         var clienteDAO = new ClienteDAO();
         clienteDAO.createCliente(cliente);
