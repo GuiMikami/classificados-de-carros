@@ -30,8 +30,7 @@ public class LoginServlet extends HttpServlet {
         var LoginDAO = new LoginDAO();
         LoginDAO.validarLogin(senhaCadastro);
 
-
-        if(senha.equals(senha)){
+        if(senha.equals(senhaCadastro)){
             System.out.println("Login efetuado com sucesso! ");
         }else {
             System.out.println("Senha inválida! ");
