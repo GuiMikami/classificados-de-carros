@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link href="cadastroCliente.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="bg-dark">
+      <div class="logo titulo">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+            <img src="IMG/Logo da Melph.png" width="140px" alt="">
+          </a>
+
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-dark1">Vender carro</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark1">Comprar carro </a></li>
+            <li><a href="#" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
+          </ul>
+
+          <div class="col-md-3 text-end">
+            <a href="#"><img src="IMG/Foto Perfil.png" alt="Botão de longin"></a>
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form action="/create-cliente" method="post">
+
+      <label for="Marca">Marca:</label>
+      <input maxlength="11" type="text" id="Marca" name="Marca" required>
+
+      <label for="modelo">modelo:</label>
+      <input maxlength="80" type="text" id="modelo" name="modelo" required>
+
+      <label for="Placa">Final da Placa:</label>
+      <input type="text" id="Placa" name="Placa" required>
+
+      <label for="Ano">Ano:</label>
+      <input maxlength="100" type="text" id="Ano" name="Ano" required>
+
+      <label for="Km">Quilometragem:</label>
+      <input maxlength="13" type="password" id="Km" name="Km" required>
+
+      <label for="Valor">Valor:</label>
+      <input type="text" id="Valor" name="Valor" required>
+
+      <div class="local">
+        <h4>Localização</h4>
+        <label for="Municipio">Municipio:</label>
+        <input maxlength="80" type="text" id="Municipio" name="Municipio" required>
+
+        <label for="UF">UF:</label>
+        <input maxlength="80" type="text" id="UF" name="UF" required>
+      </div>
+
+      <section class="but" id="but">
+        <button type="submit" style="border-radius: 5px;">Cadastrar</button>
+      </section>
+    </form>
+  </div>
+</body>
+
+</html>
