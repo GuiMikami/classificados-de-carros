@@ -3,72 +3,81 @@ package br.com.melfhcars.model;
 
 public class Carro {
 
-    private String marca;
-    private String modelo;
-    private int ano;
-    private double km;
-    private int finalPlaca;
-    private double valor;
-    private String municipio;
+    private String nomeCarro;
+    private String ano;
+    private String km;
+    private String finalPlaca;
+    private String valor;
+    private String estado;
     private String uf;
+
+    private String fotoCarro;
 
     public Carro() {
     }
 
-    public String getMarca() {
-        return marca;
+    public Carro(String nomeCarro, String ano, String km, String valor, String estado) {
+        this.nomeCarro = nomeCarro;
+        this.ano = ano;
+        this.km = km;
+        this.valor = valor;
+        this.estado = estado;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public String getFotoCarro() {
+        return fotoCarro;
     }
 
-    public String getModelo() {
-        return modelo;
+    public void setFotoCarro(String fotoCarro) {
+        this.fotoCarro = fotoCarro;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public String getNomeCarro() {
+        return nomeCarro;
     }
 
-    public int getAno() {
+    public void setNomeCarro(String nomeCarro) {
+        this.nomeCarro = nomeCarro;
+    }
+
+    public String getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(String ano) {
         this.ano = ano;
     }
 
-    public double getKm() {
+    public String getKm() {
         return km;
     }
 
-    public void setKm(double km) {
+    public void setKm(String km) {
         this.km = km;
     }
 
-    public int getFinalPlaca() {
+    public String getFinalPlaca() {
         return finalPlaca;
     }
 
-    public void setFinalPlaca(int finalPlaca) {
+    public void setFinalPlaca(String finalPlaca) {
         this.finalPlaca = finalPlaca;
     }
 
-    public double getValor() {
+    public String getValor() {
         return valor;
     }
 
-    public void setValor(double valor) {
+    public void setValor(String valor) {
         this.valor = valor;
     }
 
-    public String getMunicipio() {
-        return municipio;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setMunicipio(String municipio) {
-        this.municipio = municipio;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     public String getUf() {

@@ -11,9 +11,10 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
     <link href="home.css" rel="stylesheet">
-  <title>Document</title>
-</head>
+  <title>home</title>
 
+</head>
+<form
 <body>
   <div class="container">
   <div class="bg-dark">
@@ -84,6 +85,26 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <div class="container">
+    <div class="card" style="width: 18rem;">
+      <img src="IMG/Fundo-cinza.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nome do Carro</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <label>Ano</label>
+          <label>Km</label>
+          <label>Estado</label>
+        </li>
+      </ul>
+      <div class="card-body">
+        <a href="descricaoCarro.html" class="card-link">R$ 00.000</a>
+      </div>
+    </div>
+  </div>
+  </form>
 </body>
 
 </html>
