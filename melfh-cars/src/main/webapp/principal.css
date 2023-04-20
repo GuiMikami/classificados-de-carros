@@ -1,0 +1,163 @@
+.menu-opcoes ul{
+    font-size: 15px;
+}
+
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 10px;
+}
+
+a{
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.text-end {
+    text-align: right!important;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    width: 1899px;
+}
+
+.container{
+    margin-right: 1000px;
+    width: 940px;
+}
+
+.destaque{
+    background-color: #1e222e;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 30px;
+    width: 340px;
+    float: left;
+    border-radius: 10px;
+}
+
+.menu-opcoes a{
+    color: #0011ff;
+}
+
+.logo titulo{
+    margin-left: 70px;
+    width: 940px;
+}
+
+body{
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+header{
+    position: relative;
+}
+
+.menu-opcoes{
+    position: relative;
+    bottom: 20px;
+    left: 400px;
+}
+
+.busca,
+.menu-departamentos{
+    background-color: #1e222e;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-right: 30px;
+    width: 320px;
+    float: left;
+}
+
+.menu-departamentos{
+    clear: left;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos{
+    margin: 8px;
+}
+
+.menu-departamentos li{
+    background-color: #1e222e;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+}
+
+.menu-departamentos a{
+    color: #ffffff;
+    text-decoration: none;
+    margin: auto;
+    width: 500%;
+    padding: 10px;
+}
+
+.busca input[type=search]{
+    width: 150px;
+}
+
+.busca button{
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-indent: -9999px;
+}
+
+.menu-opcoes a:hover{
+    color: #007DC6;
+}
+
+.menu-opcoes a:active{
+    color: #7CFC00;
+}
+
+.menu-departamentos li ul{
+    display: none;
+}
+
+.menu-departamentos li:hover ul{
+    display: contents;
+}
+
+.menu-departamentos ul ul li{
+    background-color: #424b66;
+}
+
+.menu-departamentos li li a:before{
+    content: '- ';
+}
+
+.busca{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-right: 25px;
+}
+
+@media screen and(max-width: 480px){
+
+    .menu-opcoes,
+    .container,
+    .logo titulo,
+    .busca,
+    .menu-departamentos,
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+}
