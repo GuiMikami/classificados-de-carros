@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,10 +88,11 @@
   </div>
 
   <div class="container">
+<c: forEach var="car" items="cars"
     <div class="card" style="width: 18rem;">
       <img src="IMG/Fundo-cinza.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Nome do Carro</h5>
+        <h5 class="card-title">${car.NOMECARRO}</h5>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
@@ -101,9 +103,11 @@
       </ul>
       <div class="card-body">
         <a href="descricaoCarro.html" class="card-link">R$ 00.000</a>
+          </c:forEach>
       </div>
     </div>
   </div>
+
   </form>
 </body>
 

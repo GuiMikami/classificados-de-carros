@@ -29,7 +29,7 @@ public class CarDAO {
 
     public  List<Carro> mostarCarro() {
 
-        String SQL = "SELECT NOMECARRO,ANO,QUILOMETRAGEM,ESTADO,VALOR CLIENTES WHERE ";
+        String SQL = "SELECT NOMECARRO,ANO,KM,ESTADO,VALOR FROM CARRO";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -46,7 +46,7 @@ public class CarDAO {
 
                 String carName = resultSet.getString("NOMECARRO");
                 String carAno = resultSet.getString("ANO");
-                String carKm = resultSet.getString("QUILOMETRAGEM");
+                String carKm = resultSet.getString("KM");
                 String carEstado = resultSet.getString("ESTADO");
                 String carValor = resultSet.getString("VALOR");
 
