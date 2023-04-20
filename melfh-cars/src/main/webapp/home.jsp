@@ -86,7 +86,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
+/* Parte de card com banco de dados */
   <div class="container">
 <c: forEach var="car" items="cars"
     <div class="card" style="width: 18rem;">
