@@ -5,8 +5,8 @@ public class Login {
     private String email;
     private String senha;
 
-
-
+    public Login() {
+    }
 
     public String getEmail() {
         return email;
