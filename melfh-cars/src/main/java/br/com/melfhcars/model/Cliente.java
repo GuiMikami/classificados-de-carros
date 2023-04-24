@@ -1,10 +1,9 @@
 package br.com.melfhcars.model;
 
-public class Cliente extends Login {
+public class Cliente{
 
 
     private String nome;
-
     private String dataNascimento;
     private String cpf;
     private String genero;
@@ -16,7 +15,16 @@ public class Cliente extends Login {
     private String numero;
     private String contato;
 
+    private String email;
+    private String senha;
+
+
     public Cliente() {
+    }
+
+    public Cliente(String email, String senha) {
+        this.email = email;
+        this.senha = senha;
     }
 
     public String getNome() {
@@ -68,35 +76,27 @@ public class Cliente extends Login {
         this.estado = estado;
     }
 
-    public String getCep() {
-        return cep;
-    }
-
-    public void setCep(String cep) {
-        this.cep = cep;
-    }
-
-    public String getBairro() {
-        return bairro;
-    }
-
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
-
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
-
     public String getContato() {
         return contato;
     }
 
     public void setContato(String contato) {
         this.contato = contato;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 }
