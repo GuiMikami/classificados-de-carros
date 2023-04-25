@@ -33,9 +33,9 @@
                         </a>
 
                         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="#" class="nav-link px-2 link-dark1">Vender carro</a></li>
+                            <li><a href="file:///C:/JavaVsCode/classificados-de-carros/melfh-cars/src/main/webapp/cadastroCarro.html" class="nav-link px-2 link-dark1">Vender carro</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark1">Comprar carro </a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark1">Um pouco sobre nÃ³s</a></li>
+                            <li><a href="file:///C:/JavaVsCode/classificados-de-carros/melfh-cars/src/main/webapp/sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nÃ³s</a></li>
                         </ul>
 
                         <div class="col-md-3 text-end">
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -113,9 +113,9 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <label><%=listaCars.get(i).getAno()%></label>
-                            <label> ° </label>
+                            <label> ï¿½ </label>
                             <label><%=listaCars.get(i).getKm()%> Km</label>
-                            <label> ° </label>
+                            <label> ï¿½ </label>
                             <label><%=listaCars.get(i).getEstado()%></label>
                         </li>
                     </ul>
