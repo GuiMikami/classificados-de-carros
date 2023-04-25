@@ -99,7 +99,6 @@
             <div class="conatiner-fluid d-flex flex-wrap ">
                   <%
                 for (int i = 0; i < listaCars.size(); i++) {
-
                   %>
                   
                 <div class="card" style="width: 18rem;">

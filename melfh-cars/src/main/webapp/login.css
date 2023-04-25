@@ -8,8 +8,16 @@
       width: 400px;
     }
 body {
+    margin: 0;
+    padding: 0;
+    max-width 1200px;
 	font-family: Arial, sans-serif;
-	background-color: #f5f5f5;
+	background-image: url("./IMG/loginBackground.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+	width: 100%;
+	background-size: cover;
 }
 
 .container {

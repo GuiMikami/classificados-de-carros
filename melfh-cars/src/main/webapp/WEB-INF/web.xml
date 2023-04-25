@@ -5,9 +5,9 @@
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
         id="WebApp_ID" version="3.0">
 
-  <welcome-files>
-    <welcome-files>home.jsp</welcome-files>
-  </welcome-files>
+  <welcome-files-list>
+    <welcome-list>home.jsp</welcome-list>
+  </welcome-files-list>
 
   <display-name>Archetype Created Web Application</display-name>
 
