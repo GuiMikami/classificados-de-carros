@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET / HTTP/1.1" 200 5370 http-bio-8080-exec-1 1392
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /home.css HTTP/1.1" 304 - http-bio-8080-exec-3 15
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /IMG/Logo%20da%20Melph.png HTTP/1.1" 304 - http-bio-8080-exec-4 4
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /IMG/Foto%20Perfil.png HTTP/1.1" 304 - http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /IMG/Carro%201.jpg HTTP/1.1" 304 - http-bio-8080-exec-6 4
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /IMG/Carro%202.jpg HTTP/1.1" 304 - http-bio-8080-exec-5 4
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /IMG/Carro%203.jpg HTTP/1.1" 304 - http-bio-8080-exec-7 6
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-10 1
