@@ -33,9 +33,9 @@
                         </a>
 
                         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="#" class="nav-link px-2 link-dark1">Vender carro</a></li>
+                            <li><a href="file:///C:/JavaVsCode/classificados-de-carros/melfh-cars/src/main/webapp/cadastroCarro.html" class="nav-link px-2 link-dark1">Vender carro</a></li>
                             <li><a href="#" class="nav-link px-2 link-dark1">Comprar carro </a></li>
-                            <li><a href="#" class="nav-link px-2 link-dark1">Um pouco sobre n√≥s</a></li>
+                            <li><a href="file:///C:/JavaVsCode/classificados-de-carros/melfh-cars/src/main/webapp/sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre n√≥s</a></li>
                         </ul>
 
                         <div class="col-md-3 text-end">
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -97,9 +97,9 @@
         <div class="container">
           
             <div class="conatiner-fluid d-flex flex-wrap ">
-                  <%
-                for (int i = 0; i < listaCars.size(); i++) {
-                  %>
+
+                <% if (listaCars != null) { %>
+                   <% for (int i = 0; i < listaCars.size(); i++) { %>
                   
                 <div class="card" style="width: 18rem;">
                     <img src="IMG/Fundo-cinza.jpg" class="card-img-top" alt="...">
@@ -113,9 +113,9 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <label><%=listaCars.get(i).getAno()%></label>
-                            <label> ∞ </label>
-                            <label><%=listaCars.get(i).getKm()%> Km</label>
-                            <label> ∞ </label>
+                            <label> - </label>
+                            <label><%=listaCars.get(i).getKm()%>Km</label>
+                            <label> - </label>
                             <label><%=listaCars.get(i).getEstado()%></label>
                         </li>
                     </ul>
@@ -124,9 +124,10 @@
 
                     </div>
                 </div>
-                <%
-                    }
-                %> 
+                <% } %>
+               <% } else { %>
+                    <jsp:forward page="/mostrar-carro" />
+               <% } %>
 
             </div>              
         </div>

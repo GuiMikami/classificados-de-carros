@@ -35,8 +35,6 @@ public class CreateClienteServlet extends HttpServlet {
         var clienteDAO = new ClienteDAO();
         clienteDAO.createCliente(cliente);
 
-        System.out.println(clienteName);
-
         request.getRequestDispatcher("cadastroCliente.html").forward(request, response);
 
     }
