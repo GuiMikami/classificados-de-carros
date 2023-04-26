@@ -3,6 +3,8 @@ package br.com.melfhcars.model;
 
 public class Carro {
 
+    private int id;
+    private String placa;
     private String nomeCarro;
     private String ano;
     private String km;
@@ -22,6 +24,14 @@ public class Carro {
         this.km = km;
         this.valor = valor;
         this.estado = estado;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
     public String getFotoCarro() {

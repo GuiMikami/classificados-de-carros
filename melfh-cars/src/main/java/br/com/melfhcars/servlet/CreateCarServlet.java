@@ -11,23 +11,25 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/create-car")
+@WebServlet("/cadastro-carro")
 public class CreateCarServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String nomeCarro = request.getParameter("nomeCarro");
+        String placa = request.getParameter("placa");
+        String nomeCarro = request.getParameter("marca" + " " +"modelo");
         String ano = request.getParameter("ano");
         String km = request.getParameter("quilometragem");
-        String finalPlaca = request.getParameter("finalPlaca");
-        String valor = request.getParameter("valor");
         String estado = request.getParameter("estado");
+        String valor = request.getParameter("valor");
         String uf = request.getParameter("uf");
+        String finalPlaca = request.getParameter("finalPlaca");
         String fotoCarro = request.getParameter("fotoCarro");
 
         var carro = new Carro();
         carro.setNomeCarro(nomeCarro);
+        carro.setFinalPlaca(placa);
         carro.setAno(ano);
         carro.setKm(km);
         carro.setFinalPlaca(finalPlaca);

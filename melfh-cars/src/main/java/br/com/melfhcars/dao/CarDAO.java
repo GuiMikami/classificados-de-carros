@@ -12,14 +12,25 @@ public class CarDAO {
 
     public void createCar(Carro carro) {
 
-        String SQL = "INSERT INTO CARRO (NAME) VALUES (?)";
+        String SQL = "INSERT INTO CARRO (PLACA, NOMECARRO, ANO, KM, ESTADO, VALOR, FINALPLACA) VALUES (?,?,?,?,?,?,?)";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             System.out.println("sucess in connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1, carro.getNomeCarro());
+            preparedStatement.setString(1,carro.getPlaca());
+            preparedStatement.setString(2, carro.getNomeCarro());
+            preparedStatement.setString(3, carro.getFinalPlaca());
+            preparedStatement.setString(4, carro.getAno());
+            preparedStatement.setString(5, carro.getKm());
+            preparedStatement.setString(6, carro.getValor());
+            preparedStatement.setString(8, carro.getEstado());
+            preparedStatement.setString(9, carro.getUf());
+            preparedStatement.setString(10,carro.getFinalPlaca());
+            preparedStatement.setString(11,carro.getFotoCarro());
+
+
             preparedStatement.execute();
             connection.close();
         } catch (Exception e) {
@@ -49,6 +60,7 @@ public class CarDAO {
                 String carKm = resultSet.getString("KM");
                 String carEstado = resultSet.getString("ESTADO");
                 String carValor = resultSet.getString("VALOR");
+
 
                 Carro car = new Carro(carName,carAno,carKm,carValor,carEstado);
 

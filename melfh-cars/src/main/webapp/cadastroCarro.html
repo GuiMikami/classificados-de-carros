@@ -41,33 +41,33 @@
   </div>
 
   <div class="container">
-    <form action="/create-car" method="post">
+    <form action="/cadastro-carro" method="post">
 
-      <label for="Marca">Marca:</label>
-      <input maxlength="11" type="text" id="Marca" name="Marca" required>
+      <label for="marca">Marca:</label>
+      <input  type="text" id="marca" name="marca"  maxlength="11"  required>
 
-      <label for="modelo">modelo:</label>
-      <input maxlength="80" type="text" id="modelo" name="modelo" required>
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" maxlength="80" required>
 
-      <label for="Placa">Final da Placa:</label>
-      <input type="text" id="Placa" name="Placa" required>
+      <label for="placa">Final da Placa:</label>
+      <input type="text" id="placa" name="placa" maxlength="7" required>
 
-      <label for="Ano">Ano:</label>
-      <input maxlength="100" type="text" id="Ano" name="Ano" required>
+      <label for="ano">Ano:</label>
+      <input type="number" id="ano" name="ano" maxlength="04" required>
 
       <label for="Km">Quilometragem:</label>
-      <input maxlength="13" type="password" id="Km" name="Km" required>
+      <input type="number" id="km" name="km" maxlength="13" required>
 
-      <label for="Valor">Valor:</label>
-      <input type="text" id="Valor" name="Valor" required>
+      <label for="valor">Valor:</label>
+      <input type="number" id="valor" name="valor" required>
 
       <div class="local">
         <h4>Localização</h4>
-        <label for="Municipio">Municipio:</label>
-        <input maxlength="80" type="text" id="Municipio" name="Municipio" required>
+        <label for="municipio">Municipio:</label>
+        <input type="text" id="municipio" name="municipio" maxlength="80" required>
 
-        <label for="UF">UF:</label>
-        <input maxlength="80" type="text" id="UF" name="UF" required>
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" name="uf" maxlength="2"  required>
       </div>
 
       <section class="but" id="but">
