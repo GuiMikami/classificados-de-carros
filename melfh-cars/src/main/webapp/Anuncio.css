@@ -1,164 +1,117 @@
-.menu-opcoes ul{
-    font-size: 15px;
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
 }
 
-.menu-opcoes ul li{
-    display: inline;
-    margin-left: 10px;
+body {
+    background-color: #e9e9e9;
 }
 
-a{
-    color: #0d6efd;
-    text-decoration: underline;
+/* Estilo para os filtros */
+.filtros {
+    margin: 20px;
 }
 
-a:-webkit-any-link {
+.filtros label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.filtros input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.filtros button[type="submit"] {
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-.text-end {
-    text-align: right!important;
+/* Estilo para a lista de anúncios */
+.anuncios {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 20px;
+    padding: 1;
+    width: 1300px;
 }
 
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-    width: 1899px;
-}
-
-.container{
-    margin-right: 1000px;
-    width: 940px;
-}
-
-.destaque{
-    background-color: #1e222e;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-right: 30px;
-    width: 340px;
-    float: left;
-    border-radius: 10px;
-}
-
-.menu-opcoes a{
-    color: #0011ff;
-}
-
-.logo titulo{
-    margin-left: 70px;
-    width: 940px;
-}
-
-body{
-    background-color: #e9e9e9;
-    color: #333333;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-header{
-    position: relative;
-}
-
-.menu-opcoes{
-    position: relative;
-    bottom: 20px;
-    left: 400px;
-}
-
-.busca,
-.menu-departamentos{
-    background-color: #1e222e;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-right: 30px;
-    width: 320px;
-    float: left;
-}
-
-.menu-departamentos{
-    clear: left;
-    margin-top: 0px;
-    padding-bottom: 5px;
-    padding-right: 20px;
-}
-
-.busca h2,
-.busca form,
-.menu-departamentos{
-    margin: 8px;
-}
-
-.menu-departamentos li{
-    background-color: #1e222e;
-    margin-bottom: 5px;
-    padding: 5px 5px;
-}
-
-.menu-departamentos a{
-    color: #ffffff;
-    text-decoration: none;
-    margin: auto;
-    width: 500%;
+.anuncios li {
+    flex-basis: 40%;
     padding: 10px;
+    box-sizing: border-box;
 }
 
-.busca input[type=search]{
-    width: 150px;
+.anuncios img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.busca button{
-    background-image: url(../img/lupa.png);
-    background-repeat: no-repeat;
-    border: none;
-    width: 20px;
-    height: 20px;
-    text-indent: -9999px;
+.anuncios h3 {
+    margin-top: 0;
 }
 
-.menu-opcoes a:hover{
-    color: #007DC6;
+.anuncios p {
+    margin: 0;
 }
 
-.menu-opcoes a:active{
-    color: #7CFC00;
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.menu-departamentos li ul{
-    display: none;
+input {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.menu-departamentos li:hover ul{
-    display: contents;
+.container {
+    position: relative;
+
 }
 
-.menu-departamentos ul ul li{
-    background-color: #424b66;
+.local {
+    position: relative;
+
 }
 
-.menu-departamentos li li a:before{
-    content: '- ';
+.container {
+    min-height: 50%;
+    min-width: 100%;
 }
 
-.busca{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-right: 25px;
+.but button {
+    border-radius: 5px;
 }
 
-@media screen and(max-width: 480px){
+button {
+    border-radius: 5px;
+}
 
-    .menu-opcoes,
-    .container,
-    .logo titulo,
-    .busca,
-    .menu-departamentos,
-
-    h1{
-        text-align: center;
-    }
-
-    nav{
-        position: static;
-    }
+select {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
