@@ -3,6 +3,15 @@
 
 ## Projeto de Classificados de carros
 
+Objetivo do projeto:
+
+- Criação aplicação web com Java;
+- Subir servidor Tomcat(Servlet Container)Embed para executar a aplicação;
+- Fazer requisições http com formulários HTML e capturar dados da requisição em uma Servlet.
+
+
+##**Protótipos de telas**
+
 Telas:
 1. **Tela Principal** (Será a tela responsável por mostrar as novidades do site e os carros em destaques);
 ![Tela Principal](https://user-images.githubusercontent.com/99701339/225451913-321a2222-4d77-467b-9b1a-3e48084c1b68.png)

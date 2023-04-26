@@ -6,3 +6,15 @@
 0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /IMG/Carro%202.jpg HTTP/1.1" 304 - http-bio-8080-exec-5 4
 0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /IMG/Carro%203.jpg HTTP/1.1" 304 - http-bio-8080-exec-7 6
 0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:48:11 -0300] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-10 1
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:50 -0300] "GET / HTTP/1.1" 200 5235 http-bio-8080-exec-1 1000
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:52 -0300] "GET /cadastroCarro.html HTTP/1.1" 200 3221 http-bio-8080-exec-3 9
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:52 -0300] "GET /cadastroCliente.css HTTP/1.1" 304 - http-bio-8080-exec-4 4
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:54 -0300] "GET / HTTP/1.1" 200 5235 http-bio-8080-exec-5 9
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:55 -0300] "GET /Anuncio.html HTTP/1.1" 200 5914 http-bio-8080-exec-6 5
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:55 -0300] "GET /principal.css HTTP/1.1" 404 977 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:56 -0300] "GET /mostrar-carro HTTP/1.1" 200 5235 http-bio-8080-exec-8 4
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:57 -0300] "GET /sobre.html HTTP/1.1" 200 4502 http-bio-8080-exec-9 58
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:57 -0300] "GET /sobre.css HTTP/1.1" 200 1058 http-bio-8080-exec-10 5
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:57 -0300] "GET /IMG/Para%20Sobre.jpeg HTTP/1.1" 200 75885 http-bio-8080-exec-1 13
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:52:57 -0300] "GET /IMG/Carro%204.jpg HTTP/1.1" 200 20378 http-bio-8080-exec-2 13
+0:0:0:0:0:0:0:1 - - [26/Apr/2023:12:53:03 -0300] "GET / HTTP/1.1" 200 5235 http-bio-8080-exec-2 7
