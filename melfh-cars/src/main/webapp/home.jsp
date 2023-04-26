@@ -97,9 +97,9 @@
         <div class="container">
           
             <div class="conatiner-fluid d-flex flex-wrap ">
-                  <%
-                for (int i = 0; i < listaCars.size(); i++) {
-                  %>
+
+                <% if (listaCars != null) { %>
+                   <% for (int i = 0; i < listaCars.size(); i++) { %>
                   
                 <div class="card" style="width: 18rem;">
                     <img src="IMG/Fundo-cinza.jpg" class="card-img-top" alt="...">
@@ -113,9 +113,9 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
                             <label><%=listaCars.get(i).getAno()%></label>
-                            <label> � </label>
-                            <label><%=listaCars.get(i).getKm()%> Km</label>
-                            <label> � </label>
+                            <label> - </label>
+                            <label><%=listaCars.get(i).getKm()%>Km</label>
+                            <label> - </label>
                             <label><%=listaCars.get(i).getEstado()%></label>
                         </li>
                     </ul>
@@ -124,9 +124,10 @@
 
                     </div>
                 </div>
-                <%
-                    }
-                %> 
+                <% } %>
+               <% } else { %>
+                    <jsp:forward page="/mostrar-carro" />
+               <% } %>
 
             </div>              
         </div>
