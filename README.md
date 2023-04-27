@@ -10,6 +10,16 @@
 - Fazer requisições http com formulários HTML e capturar dados da requisição em uma Servlet;
 - Usando SGBD H2 para salvar os dados das requisições.
 
+**Instruções para executar o projeto:**
+
+1. Primeiramente você precisará clonar este projeto em seu repositório local;
+2. Subir o banco de dados em memória usando o SGBD H2 DATABASE para persistência de dados;
+3. Abrir a aba Maven > Plugins > toncat7 > toncat7:run;
+4. Acessar o link localhost:8080;
+5. Podendo assim testar a aplicação, fazendo cadastro do usuário, consultar, adicionar ou deletar um veículo.
+
+
+
 
 ## Script da DATABASE
 ``` 
