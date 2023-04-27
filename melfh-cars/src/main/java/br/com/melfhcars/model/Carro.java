@@ -3,7 +3,6 @@ package br.com.melfhcars.model;
 
 public class Carro {
 
-    private int id;
     private String placa;
     private String nomeCarro;
     private String ano;
@@ -11,8 +10,14 @@ public class Carro {
     private String finalPlaca;
     private String valor;
     private String estado;
-    private String uf;
 
+    private String transmissao;
+
+    private String acionamento;
+
+    private String documento;
+
+    private String condicoes;
     private String fotoCarro;
 
     public Carro() {
@@ -90,11 +95,35 @@ public class Carro {
         this.estado = estado;
     }
 
-    public String getUf() {
-        return uf;
+    public String getTransmissao() {
+        return transmissao;
     }
 
-    public void setUf(String uf) {
-        this.uf = uf;
+    public void setTransmissao(String transmissao) {
+        this.transmissao = transmissao;
+    }
+
+    public String getAcionamento() {
+        return acionamento;
+    }
+
+    public void setAcionamento(String acionamento) {
+        this.acionamento = acionamento;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
+    public String getCondicoes() {
+        return condicoes;
+    }
+
+    public void setCondicoes(String condicoes) {
+        this.condicoes = condicoes;
     }
 }

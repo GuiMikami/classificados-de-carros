@@ -18,25 +18,32 @@ public class CreateCarServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String placa = request.getParameter("placa");
-        String nomeCarro = request.getParameter("marca" + " " +"modelo");
+        String nomeCarro = request.getParameter("marca");
         String ano = request.getParameter("ano");
-        String km = request.getParameter("quilometragem");
+        String km = request.getParameter("km");
         String estado = request.getParameter("estado");
         String valor = request.getParameter("valor");
-        String uf = request.getParameter("uf");
-        String finalPlaca = request.getParameter("finalPlaca");
+        String finalPlaca = request.getParameter("finalplaca");
+        String transmissao = request.getParameter("transmissao");
+        String acionamento = request.getParameter("acionamento");
+        String documento = request.getParameter("documento");
+        String condicao = request.getParameter("condicao");
         String fotoCarro = request.getParameter("fotoCarro");
 
+
         var carro = new Carro();
+        carro.setPlaca(placa);
         carro.setNomeCarro(nomeCarro);
-        carro.setFinalPlaca(placa);
         carro.setAno(ano);
         carro.setKm(km);
         carro.setFinalPlaca(finalPlaca);
         carro.setValor(valor);
         carro.setEstado(estado);
-        carro.setUf(uf);
         carro.setFotoCarro(fotoCarro);
+        carro.setAcionamento(acionamento);
+        carro.setCondicoes(condicao);
+        carro.setDocumento(documento);
+        carro.setTransmissao(transmissao);
 
 
 

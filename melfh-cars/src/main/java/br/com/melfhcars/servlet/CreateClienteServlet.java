@@ -22,6 +22,7 @@ public class CreateClienteServlet extends HttpServlet {
         String estado = request.getParameter("estado");
         String genero = request.getParameter("genero");
         String datanascimento = request.getParameter("dataNasc");
+
         var cliente = new Cliente();
         cliente.setNome(clienteName);
         cliente.setCpf(cpf);

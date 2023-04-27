@@ -43,32 +43,66 @@
   <div class="container">
     <form action="/cadastro-carro" method="post">
 
+      <label for="placa">Placa:</label>
+      <input  type="text" id="placa" name="placa" minlength="7" maxlength="7"  required>
+
       <label for="marca">Marca:</label>
       <input  type="text" id="marca" name="marca"  maxlength="11"  required>
 
       <label for="modelo">Modelo:</label>
       <input type="text" id="modelo" name="modelo" maxlength="80" required>
 
-      <label for="placa">Final da Placa:</label>
-      <input type="text" id="placa" name="placa" maxlength="7" required>
+      <label for="finalplaca">Final da Placa:</label>
+      <input type="number" id="finalplaca" name="finalplaca"  maxlength="1" required>
 
       <label for="ano">Ano:</label>
-      <input type="number" id="ano" name="ano" maxlength="04" required>
+      <input type="text" id="ano" name="ano" required>
 
       <label for="Km">Quilometragem:</label>
       <input type="number" id="km" name="km" maxlength="13" required>
 
-      <label for="valor">Valor:</label>
+      <label for="valor">Preço:</label>
       <input type="number" id="valor" name="valor" required>
 
-      <div class="local">
-        <h4>Localização</h4>
-        <label for="municipio">Municipio:</label>
-        <input type="text" id="municipio" name="municipio" maxlength="80" required>
+      <label for="transmissao">Transmissão</label>
+      <select id="transmissao" name="transmissao" required>
+        <option value=""></option>
+        <option value="automatico">Automatico</option>
+        <option value="manual">Manual</option>
+      </select>
 
-        <label for="uf">UF:</label>
-        <input type="text" id="uf" name="uf" maxlength="2"  required>
+      <label for="acionamento">Acionamento de rodas:</label>
+      <select id="acionamento" name="acionamento" required>
+        <option value=""></option>
+        <option value="2X4">2X4</option>
+        <option value="4x4">4X4</option>
+      </select>
+
+      <label for="documento">Os documentos do seu carro estão:</label>
+      <select id="documento" name="documento" required>
+        <option value=""></option>
+        <option value="emdia">Em Dia</option>
+        <option value="Atrasado">Atrasado</option>
+      </select>
+
+      <label for="condicao">Condição que seu carro se encontra?</label>
+      <select id="condicao" name="condicao" required>
+        <option value=""></option>
+        <option value="novo">Novo</option>
+        <option value="usado">Usado</option>
+        <option value="regular">Regular</option>
+        <option value="danificado">Danificado</option>
+      </select>
+
+      <div>
+        <label for="file">Choose file</label>
+        <input type="file" name="file" id="file">
       </div>
+
+      <div class="local">
+        <h5>Localização</h5>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado" maxlength="40" required>
 
       <section class="but" id="but">
         <button type="submit" style="border-radius: 5px;">Cadastrar</button>
