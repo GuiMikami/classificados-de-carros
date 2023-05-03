@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
             ResultSet rsUsuarioDao = usuarioDao.validarLogin(cliente);
             
             if (rsUsuarioDao.next()) {
-                RequestDispatcher rd = request.getRequestDispatcher("principal.html");
+                RequestDispatcher rd = request.getRequestDispatcher("Perfil.html");
                 rd.forward(request,response);
             }else{
                 System.out.println("Usuario e senha ta incorreto");
