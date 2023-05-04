@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        RequestDispatcher rd = request.getRequestDispatcher("login.html");
+        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
         rd.forward(request, response);
     }
 
@@ -41,7 +41,9 @@ public class LoginServlet extends HttpServlet {
                 RequestDispatcher rd = request.getRequestDispatcher("Perfil.html");
                 rd.forward(request,response);
             }else{
-                System.out.println("Usuario e senha ta incorreto");
+                request.setAttribute("message", "Usuário/senha inválida");
+                RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+                rd.forward(request,response);
             }
         } catch (Exception e) {
             System.out.println(e + "erro");
