@@ -102,7 +102,7 @@
                    <% for (int i = 0; i < listaCars.size(); i++) { %>
                   
                 <div class="card" style="width: 18rem;">
-                    <img src= <%=listaCars.get(i).getFotoCarro()%> class="card-img-top" alt="...">
+                    <img src= "<%=listaCars.get(i).getFotoCarro()%>" class="card-img-top" alt="...">
                     <div class="card-body">
 
                         <h5 class="card-title">

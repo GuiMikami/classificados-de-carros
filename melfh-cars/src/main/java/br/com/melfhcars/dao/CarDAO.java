@@ -41,7 +41,7 @@ public class CarDAO {
 
     public List<Carro> mostarCarro() {
 
-        String SQL = "SELECT TOP 4 NOMECARRO, ANO, KM, VALOR, ESTADO FROM CARRO ORDER BY PLACA DESC";
+        String SQL = "SELECT TOP 4 NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO FROM CARRO ORDER BY PLACA DESC";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -61,9 +61,10 @@ public class CarDAO {
                 String carKm = resultSet.getString("KM");
                 String carEstado = resultSet.getString("ESTADO");
                 String carValor = resultSet.getString("VALOR");
+                String carFoto = resultSet.getString("FOTOCARRO");
 
 
-                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado);
+                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado, carFoto);
 
                 cars.add(car);
 
@@ -106,7 +107,7 @@ public class CarDAO {
                 String carValor = resultSet.getString("VALOR");
 
 
-                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado);
+                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado,"");
 
                 cars.add(car);
 

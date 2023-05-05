@@ -90,14 +90,14 @@ public class CreateCarServlet extends HttpServlet {
 
         } else {
             String fileName = processUploadedFile(item);
-            requestParameters.put("image","IMG/".concat(fileName));
+            requestParameters.put("image","img/".concat(fileName));
         }
     }
 
     private String processUploadedFile(FileItem fileItem) throws Exception {
         Long currentTime = new Date().getTime();
         String fileName = currentTime.toString().concat("-").concat(fileItem.getName().replace(" ", " "));
-        String filePath = this.getServletContext().getRealPath("IMG").concat(File.separator).concat(fileName);
+        String filePath = this.getServletContext().getRealPath("img").concat(File.separator).concat(fileName);
         fileItem.write(new File(filePath));
         return fileName;
     }

@@ -23,12 +23,13 @@ public class Carro {
     public Carro() {
     }
 
-    public Carro(String nomeCarro, String ano, String km, String valor, String estado) {
+    public Carro(String nomeCarro, String ano, String km, String valor, String estado,String fotoCarro) {
         this.nomeCarro = nomeCarro;
         this.ano = ano;
         this.km = km;
         this.valor = valor;
         this.estado = estado;
+        this.fotoCarro =fotoCarro;
     }
 
     public String getPlaca() {
