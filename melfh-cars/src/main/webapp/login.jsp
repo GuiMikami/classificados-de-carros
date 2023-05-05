@@ -14,7 +14,7 @@
     <body>
     <div class="login-box">
         <div class="logo-container">
-            <img src="IMG/Logo da Melph.png" width="140px" alt="">
+            <img src="img/Logo da Melph.png" width="140px" alt="">
         </div>
         <h2>Fazer Login</h2>
         <form action="/fazerLogin" method="post">

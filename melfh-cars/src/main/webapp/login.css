@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    max-width 1200px;
+    max-width: 1200px;
 	font-family: Arial, sans-serif;
 	background-image: url("./IMG/loginBackground.png");
 	background-position: center;
