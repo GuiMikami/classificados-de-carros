@@ -3,32 +3,41 @@ import br.com.melfhcars.dao.CarDAO;
 import br.com.melfhcars.dao.ClienteDAO;
 import br.com.melfhcars.model.Carro;
 import br.com.melfhcars.model.Cliente;
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
-
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import static org.apache.commons.fileupload.servlet.ServletFileUpload.isMultipartContent;
 @WebServlet("/cadastro-carro")
 public class CreateCarServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String placa = request.getParameter("placa");
-        String nomeCarro = request.getParameter("marca");
-        String ano = request.getParameter("ano");
-        String km = request.getParameter("km");
-        String estado = request.getParameter("estado");
-        String valor = request.getParameter("valor");
-        String finalPlaca = request.getParameter("finalplaca");
-        String transmissao = request.getParameter("transmissao");
-        String acionamento = request.getParameter("acionamento");
-        String documento = request.getParameter("documento");
-        String condicao = request.getParameter("condicao");
-        String fotoCarro = request.getParameter("fotoCarro");
+        Map<String, String> parameters = uploadImage(request);
+        String placa = parameters.get("placa");
+        String nomeCarro = parameters.get("marca");
+        String ano = parameters.get("ano");
+        String km = parameters.get("km");
+        String estado = parameters.get("estado");
+        String valor = parameters.get("valor");
+        String finalPlaca = parameters.get("finalplaca");
+        String transmissao = parameters.get("transmissao");
+        String acionamento = parameters.get("acionamento");
+        String documento = parameters.get("documento");
+        String condicao = parameters.get("condicao");
+        String fotoCarro = parameters.get("image");
 
 
         var carro = new Carro();
@@ -46,7 +55,6 @@ public class CreateCarServlet extends HttpServlet {
         carro.setTransmissao(transmissao);
 
 
-
         var carroDAO = new CarDAO();
         carroDAO.createCar(carro);
 
@@ -56,4 +64,42 @@ public class CreateCarServlet extends HttpServlet {
 
 
     }
+
+    private Map<String, String> uploadImage(HttpServletRequest httpServletRequest) {
+        Map<String, String> requestParameters = new HashMap<>();
+
+        if (isMultipartContent(httpServletRequest)) {
+            try {
+                DiskFileItemFactory diskFileItemFactory = new DiskFileItemFactory();
+
+                List<FileItem> fileItems = new ServletFileUpload(diskFileItemFactory).parseRequest(httpServletRequest);
+
+                for (FileItem fileItem : fileItems) {
+                    checkFieldType(fileItem, requestParameters);
+                }
+            } catch (Exception ex) {
+                requestParameters.put("image", "IMG/default-car.jpg");
+            }
+        }
+        return requestParameters;
+    }
+
+    private void checkFieldType(FileItem item, Map requestParameters)throws Exception {
+        if (item.isFormField()) {
+            requestParameters.put(item.getFieldName(), item.getString());
+
+        } else {
+            String fileName = processUploadedFile(item);
+            requestParameters.put("image","IMG/".concat(fileName));
+        }
+    }
+
+    private String processUploadedFile(FileItem fileItem) throws Exception {
+        Long currentTime = new Date().getTime();
+        String fileName = currentTime.toString().concat("-").concat(fileItem.getName().replace(" ", " "));
+        String filePath = this.getServletContext().getRealPath("IMG").concat(File.separator).concat(fileName);
+        fileItem.write(new File(filePath));
+        return fileName;
+    }
+
 }

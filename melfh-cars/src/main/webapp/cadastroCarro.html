@@ -10,7 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-  <link href="cadastroCliente.css" rel="stylesheet">
+  <link href="cadastroCarro.css" rel="stylesheet">
   <title>Document</title>
 </head>
 
@@ -41,19 +41,16 @@
   </div>
 
   <div class="container">
-    <form action="/cadastro-carro" method="post">
+    <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
 
       <label for="placa">Placa:</label>
       <input  type="text" id="placa" name="placa" minlength="7" maxlength="7"  required>
 
-      <label for="marca">Marca:</label>
-      <input  type="text" id="marca" name="marca"  maxlength="11"  required>
-
-      <label for="modelo">Modelo:</label>
-      <input type="text" id="modelo" name="modelo" maxlength="80" required>
+      <label for="marca">Marca/Modelo:</label>
+      <input  type="text" id="marca" name="marca"  required placeholder="Modelo e Marca do seu carro">
 
       <label for="finalplaca">Final da Placa:</label>
-      <input type="number" id="finalplaca" name="finalplaca"  maxlength="1" required>
+      <input type="text" id="finalplaca" name="finalplaca"  maxlength="1" required>
 
       <label for="ano">Ano:</label>
       <input type="text" id="ano" name="ano" required>
@@ -96,7 +93,7 @@
 
       <div>
         <label for="file">Choose file</label>
-        <input type="file" name="file" id="file">
+        <input type="file" name="file" id="file" accept="image/jpeg">
       </div>
 
       <div class="local">
