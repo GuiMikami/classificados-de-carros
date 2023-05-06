@@ -12,6 +12,8 @@ body {
 /* Estilo para os filtros */
 .filtros {
     margin: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .filtros label {
@@ -40,6 +42,7 @@ body {
 .anuncios {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     list-style-type: none;
     margin: 20px;
     padding: 1;
@@ -96,6 +99,7 @@ input {
 .container {
     min-height: 50%;
     min-width: 100%;
+    padding: 0px;
 }
 
 .but button {
