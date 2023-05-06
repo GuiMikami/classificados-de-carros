@@ -29,7 +29,7 @@
                     <header
                         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
                         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
-                            <img src="IMG/Logo da Melph.png" width="140px" alt="">
+                            <img src="img/Logo da Melph.png" width="140px" alt="">
                         </a>
 
                         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -39,7 +39,6 @@
                         </ul>
 
                         <div class="col-md-3 text-end">
-                            <a href="#"><img src="IMG/Foto Perfil.png" alt="Botão de longin"></a>
                             <button type="button" class="btn btn-outline-primary me-2">Login</button>
                             <button type="button" class="btn btn-primary">Sign-up</button>
                         </div>
@@ -60,21 +59,21 @@
             <div class="container">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="IMG/Carro 1.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Carro 1.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="IMG/Carro 2.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Carro 2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="IMG/Carro 3.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Carro 3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
