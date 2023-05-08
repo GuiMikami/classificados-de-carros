@@ -1,17 +1,77 @@
-.container{
+.container {
     position: relative;
 
 }
-.container{
+
+.container {
     min-width: 75%;
 }
-.descricao{
+
+.descricao {
     list-style: none;
     display: flex;
 }
-.descricao li{
- margin-right: 200px;
- border-bottom: 2px solid black;
- display: inline-block;
- width:100% ;
+
+.descricao li {
+    margin-right: 200px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    width: 100%;
 }
+
+.imagem img {
+    width: 860px;
+    height: 600px;
+}
+
+.containerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.carInfo {
+    position: relative;
+    top: -530px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#nome-car {
+    position: relative;
+    top: -50px;
+    left: -15;
+    margin: 0;
+    text-align: left;
+}
+
+#valor-car {
+    position: relative;
+    left: -110;
+    bottom: -100px;
+    margin: 0;
+    text-align: left;
+    color: green;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+#ano-car, #estado-car, #Km-car{
+    position: relative;
+    left: -50;
+    bottom: -100px;
+    margin: 0;
+    margin-right: 1em;
+  }
+  #Chamar-no-Zap {
+    justify-content: flex-end;
+    position: relative;
+    margin-top: 1em;
+    padding: 1em 2em;
+  }

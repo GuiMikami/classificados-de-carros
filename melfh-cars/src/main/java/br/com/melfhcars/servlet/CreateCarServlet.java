@@ -65,8 +65,6 @@ public class CreateCarServlet extends HttpServlet {
 
     }
 
-<<<<<<< HEAD
-=======
     private Map<String, String> uploadImage(HttpServletRequest httpServletRequest) {
         Map<String, String> requestParameters = new HashMap<>();
 
@@ -103,6 +101,5 @@ public class CreateCarServlet extends HttpServlet {
         fileItem.write(new File(filePath));
         return fileName;
     }
->>>>>>> bcc061e2a895c8556454875082c75001abd8d30a
 
 }

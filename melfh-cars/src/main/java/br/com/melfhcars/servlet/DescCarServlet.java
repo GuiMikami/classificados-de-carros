@@ -11,20 +11,19 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/mostrar-carro")
-public class ListCarHome extends HttpServlet {
+
+@WebServlet("/descricao-carro")
+public class DescCarServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-      List<Carro> cars = new CarDAO().mostarCarro();
 
-      req.setAttribute("cars",cars);
+        String placa = req.getParameter("placa");
 
-      req.getRequestDispatcher("home.jsp").forward(req, resp);
+        List<Carro> descricao = new CarDAO().descricao(placa);
+        
+        req.setAttribute("descricao", descricao);
 
-      String placa = req.getParameter("placa");
-
+        req.getRequestDispatcher("descricaoCarro.jsp").forward(req,resp);
     }
-
-
-    }
+}

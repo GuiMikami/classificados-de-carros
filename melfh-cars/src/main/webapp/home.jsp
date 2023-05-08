@@ -119,7 +119,7 @@
                         </li>
                     </ul>
                     <div class="card-body">
-                        <a href="descricaoCarro.html" class="card-link">R$ <%=listaCars.get(i).getValor()%></a>
+                        <a href="descricaoCarro.jsp?placa=<%=listaCars.get(i).getPlaca()%>" class="card-link">R$ <%=listaCars.get(i).getValor()%></a>
 
                     </div>
                 </div>

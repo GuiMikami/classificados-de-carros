@@ -1,5 +1,11 @@
-<html lang="en">
 
+<%@page import="br.com.melfhcars.model.Carro"%>
+<%@page import="java.util.List"%>
+<% List<Carro> decricaoCarro = (List < Carro >) request.getAttribute("descricao");%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<html lang="en">
+ 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,42 +44,49 @@
     </div>
   </div>
 
-<div class="container">
-  <img src="img/Fundo-cinza.jpg" alt="fundo cinza, caso não tenha a imagem disponivel">
+  <div class="containerInfo">
+    <div class="container">
+      <div class="imagem">
+          <img src="<%= decricaoCarro.get(0).getFotoCarro()%>" alt="Foto do carro">
+        <div class="carInfo">
+            <h2 id="nome-car">
+                <%= decricaoCarro.get(0).getNomeCarro() %>
+            </h2>
+          <h3 id="valor-car">R$ <%= decricaoCarro.get(0).getValor()%></h3>
 
+          <div class="detalhes">
+              <span id="ano-car"><%= decricaoCarro.get(0).getAno()%> -</span>
 
-  <label id="nome-car"> Nome do Carro</label>
+              <span id="estado-car"><%= decricaoCarro.get(0).getEstado()%> -</span>
 
-  <label id="valor-car">R$ 00.000</label>
-
-  <label id="ano-car">Ano</label>
-
-  <label id="estado-car">Estado</label>
-
-  <label id="Km-car">Km</label>
-
-  <button id="Chmar no Zap">
-    Chamar no zap
-  </button>
-</div>
-
-<div class="container">
-  <div class="text-center">
-    <h1>Caracteristicas</h1>
+              <span id="Km-car"><%= decricaoCarro.get(0).getKm()%>Km</span>
+          </div>
+        </div>
+        <button id="Chmar no Zap" class="btn btn-outline-success">
+          Chamar no zap
+        </button>
+      </div>
+    </div>
   </div>
 
-  <h3>Geral</h3>
-  <ul class="descricao">
-    <li>Transmissão</li>
-    <li>Acionamento de Rodas</li>
-    <li>Final da Placa</li>
-  </ul>
-  <ul class="descricao">
-  <li>N° de Portas</li>
-  <li>Documentação</li>
-  <li>Estado de Uso</li>
-</ul>
-</div>
+    <div class="text-center">
+      <h1>Caracteristicas</h1>
+    </div>
+
+    <h3>Geral</h3>
+    <ul class="descricao">
+      <li>Transmissão
+        <label> ? </label>
+      </li>
+      <li>Acionamento de Rodas</li>
+      <li>Final da Placa</li>
+    </ul>
+    <ul class="descricao">
+      <li>N° de Portas</li>
+      <li>Documentação</li>
+      <li>Estado de Uso</li>
+    </ul>
+  </div>
 
 </body>
 
