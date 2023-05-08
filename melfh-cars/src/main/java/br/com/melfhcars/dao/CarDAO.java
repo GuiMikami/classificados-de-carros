@@ -85,7 +85,7 @@ public class CarDAO {
 
     public List<Carro> deletarCarro(String placa) {
 
-        String SQL = "";
+        String SQL = "DELETE CARRO WHERE PLACA = ? ";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -123,4 +123,38 @@ public class CarDAO {
             return Collections.emptyList();
         }
     }
+
+
+
+    public void atualizarCarro(Carro carro){
+
+        String SQL = "UPDATE CARRO SET NOMECARRO, ANO, KM, ESTADO, VALOR, FINALPLACA, = ? WHERE PLACA = ?";
+
+        try{
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            System.out.println("sucess in database connection");
+
+            PreparedStatement ps = connection.prepareStatement(SQL);
+            ps.setString(1,carro.getNomeCarro());
+            ps.setString(2,carro.getAno());
+            ps.setString(3,carro.getKm());
+            ps.setString(4,carro.getEstado());
+            ps.setString(5,carro.getValor());
+            ps.setString(6,carro.getFinalPlaca());
+
+            System.out.println("sucess in update car");
+            connection.close();
+
+        }catch (Exception e){
+            System.out.println("fail in database connection");
+
+        }
+
+
+
+    }
+
+
+
 }
