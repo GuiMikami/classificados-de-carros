@@ -48,21 +48,5 @@ public class LoginServlet extends HttpServlet {
         } catch (Exception e) {
             System.out.println(e + "erro");
         }
-
-//        boolean loginSucesso = false;
-//        if(usuario != null && usuario.getSenha().equals(senha)){
-//                loginSucesso = true;
-//        }
-//        if(loginSucesso){
-//            RequestDispatcher rd = request.getRequestDispatcher("principal.html");
-//            rd.forward(request,response);
-//            
-//        }
-//        else{
-//            request.setAttribute("erro","emal/senha inválidos!");
-//            RequestDispatcher rd = request.getRequestDispatcher("login.html");
-//            rd.forward(request, response);
-//        }
-//    }
     }
 }

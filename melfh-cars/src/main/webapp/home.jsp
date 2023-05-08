@@ -39,6 +39,12 @@
                         </ul>
 
                         <div class="col-md-3 text-end">
+<<<<<<< HEAD
+                            <a href="#"><img src="IMG/Foto Perfil.png" alt="Botão de perfil"></a>
+                            <button type="button" >Perfil</button>
+                            <a href="login.jsp" alt="Botão login"></a>
+=======
+>>>>>>> 10691fcda0b21dd670b35e7263539e5905e223b1
                             <button type="button" class="btn btn-outline-primary me-2">Login</button>
                             <button type="button" class="btn btn-primary">Sign-up</button>
                         </div>
