@@ -24,6 +24,7 @@ public class ListCarHome extends HttpServlet {
 
       String placa = req.getParameter("placa");
 
+        System.out.println(placa);
     }
 
 

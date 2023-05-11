@@ -5,6 +5,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
 
 public class CarDAO {
 
@@ -65,7 +66,7 @@ public class CarDAO {
                 String carPlaca = resultSet.getString("PLACA");
 
 
-                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado, carFoto,carPlaca);
+                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado, carFoto, carPlaca);
 
                 cars.add(car);
 
@@ -106,7 +107,7 @@ public class CarDAO {
                 String carKm = resultSet.getString("KM");
                 String carEstado = resultSet.getString("ESTADO");
                 String carValor = resultSet.getString("VALOR");
-    
+
                 //Carro car = new Carro(carName, carAno, carKm, carValor, carEstado);
 
                 //cars.add(car);
@@ -117,14 +118,14 @@ public class CarDAO {
             connection.close();
 
             return cars;
-        }catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("fail in database connection");
 
             return Collections.emptyList();
         }
     }
-<<<<<<< HEAD
-    public List<Carro> descricao(String placa) {
+
+    public Carro descricao(String placa) {
 
         String SQL = "SELECT NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,TRANSMISSAO,ACIONAMENTO,DOCUMENTO,CONDICAO,FINALPLACA FROM CARRO WHERE PLACA = ? ";
 
@@ -135,11 +136,10 @@ public class CarDAO {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1,placa);
+            preparedStatement.setString(1, placa);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            List<Carro> descricao = new ArrayList<>();
 
             while (resultSet.next()) {
 
@@ -156,58 +156,53 @@ public class CarDAO {
                 String carCondicao = resultSet.getString("CONDICAO");
 
 
-                Carro car = new Carro(carName,carAno,carKm,carFinalPlaca,carValor,carEstado,carTransmissao,carAcionamento,carDocumento,carCondicao,carFoto);
+                Carro car = new Carro(carName, carAno, carKm, carFinalPlaca, carValor, carEstado, carTransmissao, carAcionamento, carDocumento, carCondicao, carFoto);
 
-                descricao.add(car);
+                System.out.println("success in select * car");
+
+                connection.close();
+
+
+                return car;
 
             }
-            System.out.println("success in select * car");
 
-            connection.close();
-
-            return descricao;
 
 
         } catch (Exception e) {
+
             System.out.println("fail in database connection");
 
-            return Collections.emptyList();
         }
+
+        return null;
+
     }
-=======
-
-
-
-    public void atualizarCarro(Carro carro){
+    public void atualizarCarro(Carro carro) {
 
         String SQL = "UPDATE CARRO SET NOMECARRO, ANO, KM, ESTADO, VALOR, FINALPLACA, = ? WHERE PLACA = ?";
 
-        try{
+        try {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
             System.out.println("sucess in database connection");
 
             PreparedStatement ps = connection.prepareStatement(SQL);
-            ps.setString(1,carro.getNomeCarro());
-            ps.setString(2,carro.getAno());
-            ps.setString(3,carro.getKm());
-            ps.setString(4,carro.getEstado());
-            ps.setString(5,carro.getValor());
-            ps.setString(6,carro.getFinalPlaca());
+            ps.setString(1, carro.getNomeCarro());
+            ps.setString(2, carro.getAno());
+            ps.setString(3, carro.getKm());
+            ps.setString(4, carro.getEstado());
+            ps.setString(5, carro.getValor());
+            ps.setString(6, carro.getFinalPlaca());
 
             System.out.println("sucess in update car");
             connection.close();
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("fail in database connection");
 
         }
 
 
-
     }
-
-
-
->>>>>>> 23741fb13d5b66f008ff0a4a82381031ba554626
 }

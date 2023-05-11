@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
+
 
 
 @WebServlet("/descricao-carro")
@@ -20,7 +20,7 @@ public class DescCarServlet extends HttpServlet {
 
         String placa = req.getParameter("placa");
 
-        List<Carro> descricao = new CarDAO().descricao(placa);
+        Carro descricao = new CarDAO().descricao(placa);
         
         req.setAttribute("descricao", descricao);
 

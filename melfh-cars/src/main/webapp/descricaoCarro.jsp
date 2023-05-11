@@ -1,9 +1,6 @@
 
-<%@page import="br.com.melfhcars.model.Carro"%>
-<%@page import="java.util.List"%>
-<% List<Carro> decricaoCarro = (List < Carro >) request.getAttribute("descricao");%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+ <%@ page contentType="text/html; charset=UTF-8" %>
 <html lang="en">
  
 <head>
@@ -47,19 +44,19 @@
   <div class="containerInfo">
     <div class="container">
       <div class="imagem">
-          <img src="<%= decricaoCarro.get(0).getFotoCarro()%>" alt="Foto do carro">
+          <img src=" ${requestScope.descricao.fotoCarro} " alt="Foto do carro">
         <div class="carInfo">
             <h2 id="nome-car">
-                <%= decricaoCarro.get(0).getNomeCarro() %>
+        ${requestScope.descricao.nomeCarro}
             </h2>
-          <h3 id="valor-car">R$ <%= decricaoCarro.get(0).getValor()%></h3>
+          <h3 id="valor-car">R$ ${requestScope.descricao.valor}</h3>
 
           <div class="detalhes">
-              <span id="ano-car"><%= decricaoCarro.get(0).getAno()%> -</span>
+              <span id="ano-car">${requestScope.descricao.ano} - </span>
 
-              <span id="estado-car"><%= decricaoCarro.get(0).getEstado()%> -</span>
+              <span id="estado-car"> ${requestScope.descricao.estado} - </span>
 
-              <span id="Km-car"><%= decricaoCarro.get(0).getKm()%>Km</span>
+              <span id="Km-car">${requestScope.descricao.km} Km </span>
           </div>
         </div>
         <button id="Chmar no Zap" class="btn btn-outline-success">
