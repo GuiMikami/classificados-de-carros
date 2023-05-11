@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.ResultSet;
 
-@WebServlet("/fazerLogin")
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 
     @Override
@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
             ResultSet rsUsuarioDao = usuarioDao.validarLogin(cliente);
             
             if (rsUsuarioDao.next()) {
-                RequestDispatcher rd = request.getRequestDispatcher("Perfil.html");
+                RequestDispatcher rd = request.getRequestDispatcher("Perfil.jsp");
                 rd.forward(request,response);
             }else{
                 request.setAttribute("message", "Usuário/senha inválida");

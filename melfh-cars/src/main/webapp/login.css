@@ -1,20 +1,21 @@
-    .login-box {
-      background-color: #d3d3d3;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-      margin: 170px auto;
-      padding: 30px;
-      width: 400px;
+.login-box {
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 170px auto;
+    padding: 30px;
+    width: 400px;
     }
+
 body {
+	background-image:url('../img/loginBackground.png');
     margin: 0;
     padding: 0;
     max-width: 1200px;
 	font-family: Arial, sans-serif;
-	background-image: url("./IMG/loginBackground.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 400px;
+	height: 500px;
 	width: 100%;
 	background-size: cover;
 }

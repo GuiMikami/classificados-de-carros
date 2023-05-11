@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <%
     String erro = (String) request.getAttribute("erro");
 %>
@@ -17,7 +17,7 @@
             <img src="img/Logo da Melph.png" width="140px" alt="">
         </div>
         <h2>Fazer Login</h2>
-        <form action="/fazerLogin" method="post">
+        <form action="/login" method="post">
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email">
             <label for="password">Senha:</label>
@@ -34,7 +34,7 @@
             </span>
 
         <div class ="signup-link-container">
-            <p>Não possui uma conta? <a href="#">Fazer Cadastro</a></p>
+            <p> Não possui uma conta? <a href="#">Fazer Cadastro</a></p>
         </div>
     </div>
 

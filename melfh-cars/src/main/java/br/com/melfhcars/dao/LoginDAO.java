@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 public class LoginDAO {
     public ResultSet validarLogin(Cliente cliente) {
 
-        String SQL = "SELECT * FROM CLIENTE WHERE email = ? AND senha = ?";
+        String SQL = "SELECT * FROM CLIENTE WHERE email = ? ";
 
         try{
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
@@ -19,7 +19,6 @@ public class LoginDAO {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
             preparedStatement.setString(1, cliente.getEmail());
-            preparedStatement.setString(2,cliente.getSenha());
 
             ResultSet rs = preparedStatement.executeQuery();
 
