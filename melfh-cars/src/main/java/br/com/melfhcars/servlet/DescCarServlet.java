@@ -20,8 +20,8 @@ public class DescCarServlet extends HttpServlet {
 
         String placa = req.getParameter("placa");
 
-        List<Carro> descricao = new CarDAO().descricao(placa);
-        
+        Carro descricao = new CarDAO().descricao(placa);
+
         req.setAttribute("descricao", descricao);
 
         req.getRequestDispatcher("descricaoCarro.jsp").forward(req,resp);

@@ -3,11 +3,10 @@
 <% List<Carro> listaCars = (List<Carro>) request.getAttribute("cars");%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html lang="en">
+
     <head>
-
-
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,19 +32,14 @@
                         </a>
 
                         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="cadastroCarro.html" class="nav-link px-2 link-dark1">Vender carro</a></li>
+                            <li><a href="cadastroCarro.jsp" class="nav-link px-2 link-dark1">Vender carro</a></li>
                             <li><a href="Anuncio.html" class="nav-link px-2 link-dark1">Comprar carro </a></li>
                             <li><a href="sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
                         </ul>
 
                         <div class="col-md-3 text-end">
-<<<<<<< HEAD
-                            <a href="#"><img src="IMG/Foto Perfil.png" alt="Botão de perfil"></a>
-                            <button type="button" >Perfil</button>
-                            <a href="login.jsp" alt="Botão login"></a>
-=======
->>>>>>> 10691fcda0b21dd670b35e7263539e5905e223b1
-                            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+
+                            <button type="button" class="btn btn-outline-primary me-2"><a  href="login.jsp">Login</a></button>
                             <button type="button" class="btn btn-primary">Sign-up</button>
                         </div>
                     </header>
@@ -125,7 +119,7 @@
                         </li>
                     </ul>
                     <div class="card-body">
-                        <a href="descricaoCarro.jsp?placa=<%=listaCars.get(i).getPlaca()%>" class="card-link">R$ <%=listaCars.get(i).getValor()%></a>
+                        <a href="/descricao-carro?placa=<%=listaCars.get(i).getPlaca()%>" class="card-link">R$ <%=listaCars.get(i).getValor()%></a>
 
                     </div>
                 </div>
