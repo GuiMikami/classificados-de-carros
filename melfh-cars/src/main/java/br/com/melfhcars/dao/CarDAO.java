@@ -110,7 +110,7 @@ public class CarDAO {
         }
     }
 
-    public List<Carro> descricao(String placa) {
+    public Carro descricao(String placa){
 
         String SQL = "SELECT NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,TRANSMISSAO,ACIONAMENTO,DOCUMENTO,CONDICAO,FINALPLACA FROM CARRO WHERE PLACA = ? ";
 
@@ -144,21 +144,25 @@ public class CarDAO {
 
                 Carro car = new Carro(carName, carAno, carKm, carFinalPlaca, carValor, carEstado, carTransmissao, carAcionamento, carDocumento, carCondicao, carFoto);
 
-                descricao.add(car);
+                System.out.println("success in select * car");
+
+                connection.close();
+
+
+                return car;
 
             }
-            System.out.println("success in select * car");
 
-            connection.close();
-
-            return descricao;
 
 
         } catch (Exception e) {
+
             System.out.println("fail in database connection");
 
-            return Collections.emptyList();
         }
+
+        return null;
+
     }
 
 

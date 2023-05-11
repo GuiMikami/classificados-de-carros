@@ -7,6 +7,7 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -71,8 +72,7 @@ public class CreateCarServlet extends HttpServlet {
         }
 
 
-
-        request.getRequestDispatcher("cadastroCarro.html").forward(request, response);
+        request.getRequestDispatcher("cadastroCarro.jsp").forward(request, response);
 
 
     }
@@ -113,10 +113,10 @@ public class CreateCarServlet extends HttpServlet {
         fileItem.write(new File(filePath));
         return fileName;
     }
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 23741fb13d5b66f008ff0a4a82381031ba554626
-
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/cadastroCarro.jsp");
+        dispatcher.forward(req,resp);
+    }
 }
