@@ -16,7 +16,7 @@ public class ListCarHome extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-      List<Carro> cars = new CarDAO().mostarCarro();
+      List<Carro> cars = new CarDAO().mostrarCarro();
 
       req.setAttribute("cars",cars);
 
@@ -25,6 +25,4 @@ public class ListCarHome extends HttpServlet {
       String placa = req.getParameter("placa");
 
     }
-
-
-    }
+}

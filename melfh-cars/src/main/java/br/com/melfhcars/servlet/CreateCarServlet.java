@@ -113,10 +113,5 @@ public class CreateCarServlet extends HttpServlet {
         fileItem.write(new File(filePath));
         return fileName;
     }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 23741fb13d5b66f008ff0a4a82381031ba554626
 
 }

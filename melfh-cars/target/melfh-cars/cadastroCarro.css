@@ -1,0 +1,50 @@
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+
+}
+.local{
+    position: relative;
+
+}
+.container{
+    min-height: 50% ;
+    min-width: 100%;
+}
+.but button{
+    border-radius: 5px;
+}
+
+button {  border-radius: 5px;} 
+
+select {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
