@@ -17,7 +17,7 @@
         crossorigin="anonymous"></script>
         <link href="home.css" rel="stylesheet">
 
-        <title>home</title>
+        <title>Página Inicial</title>
 
     </head>
     <form

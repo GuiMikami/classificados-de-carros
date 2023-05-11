@@ -13,7 +13,7 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
   <link href="descricaocarro.css" rel="stylesheet">
-  <title>Document</title>
+  <title>Descrição do Carro</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
           </a>
 
           <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="cadastroCarro.html" class="nav-link px-2 link-dark1">Vender carro</a></li>
+            <li><a href="cadastroCarro.jsp" class="nav-link px-2 link-dark1">Vender carro</a></li>
             <li><a href="anuncio.html" class="nav-link px-2 link-dark1">Comprar carro </a></li>
             <li><a href="sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
           </ul>
@@ -59,7 +59,10 @@
               <span id="Km-car">${requestScope.descricao.km} Km </span>
           </div>
         </div>
-        <button id="Chmar no Zap" class="btn btn-outline-success">
+            <button id="Chamar-no-Zap" class="btn btn-outline-success">
+                Voltar para Página Inicial
+            </button>
+        <button id="Chamar-no-Zap" class="btn btn-outline-success">
           Chamar no zap
         </button>
       </div>
