@@ -41,7 +41,12 @@ public class LoginServlet extends HttpServlet {
                 RequestDispatcher rd = request.getRequestDispatcher("Perfil.jsp");
                 rd.forward(request,response);
             }else{
-                request.setAttribute("message", "Usuário/senha inválida");
+
+
+                String invalidPasswordMessage = "Email/Senha inválidos!";
+                String invalidPasswordColor = "red";
+                request.setAttribute("invalidPasswordMessage", invalidPasswordMessage);
+                request.setAttribute("invalidPasswordColor",invalidPasswordColor);
                 RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
                 rd.forward(request,response);
             }

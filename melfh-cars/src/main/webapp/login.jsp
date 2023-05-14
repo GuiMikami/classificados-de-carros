@@ -29,18 +29,15 @@
                 }
              %></p>
         </form>
-            <span>
-                ${requestScope.message}
-            </span>
+            <c:if test="${not empty requestScope.invalidPasswordMessage}">
+                <span id="invalid-password-message" style="color: ${requestScope.invalidPasswordColor};">${requestScope.invalidPasswordMessage}</span>
+            </c:if>
+
 
         <div class ="signup-link-container">
             <p> Não possui uma conta? <a href="#">Fazer Cadastro</a></p>
         </div>
     </div>
-
-    <span>
-        ${requestScope.message}
-    </span>
 
     </body>
 

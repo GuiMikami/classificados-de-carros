@@ -65,11 +65,11 @@ public class CreateCarServlet extends HttpServlet {
 
 
         // atualizar informações do carro
-        if(placaCarro.isBlank()){
-            carroDAO.createCar(carro);
-        }else {
-            carroDAO.atualizarCarro(carro);
-        }
+        //if(placaCarro.isBlank()){
+        //    carroDAO.createCar(carro);
+        //}else {
+        //    carroDAO.atualizarCarro(carro);
+        //}
 
 
         request.getRequestDispatcher("cadastroCarro.jsp").forward(request, response);

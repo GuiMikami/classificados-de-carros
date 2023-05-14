@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateCarServlet.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\LoginDAO.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Carro.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DeleteCarServlet.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\CarDAO.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Login.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LoginServlet.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Cliente.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\ClienteDAO.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateClienteServlet.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarHome.java
-C:\Users\rosan\IdeaProjects\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DescCarServlet.java
-=======
 C:\temp\GIT\projeto-integrador-III\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DescCarServlet.java
 C:\temp\GIT\projeto-integrador-III\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarHome.java
 C:\temp\GIT\projeto-integrador-III\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateClienteServlet.java
@@ -24,4 +10,3 @@ C:\temp\GIT\projeto-integrador-III\classificados-de-carros\melfh-cars\src\main\j
 C:\temp\GIT\projeto-integrador-III\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\ClienteDAO.java
 C:\temp\GIT\projeto-integrador-III\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LoginServlet.java
 C:\temp\GIT\projeto-integrador-III\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\CarDAO.java
->>>>>>> f17251261da722ef7705fd4f263113ec919ee530
