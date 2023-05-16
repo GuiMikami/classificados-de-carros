@@ -47,6 +47,14 @@ public class Carro {
         this.fotoCarro = fotoCarro;
     }
 
+    public Carro(String placa, String nomeCarro, String ano, String km, String valor) {
+        this.placa = placa;
+        this.nomeCarro = nomeCarro;
+        this.ano = ano;
+        this.km = km;
+        this.valor = valor;
+    }
+
     public String getPlaca() {
         return placa;
     }

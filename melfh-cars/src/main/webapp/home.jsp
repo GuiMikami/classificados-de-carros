@@ -38,9 +38,8 @@
                         </ul>
 
                         <div class="col-md-3 text-end">
-
-                            <button type="button" class="btn btn-outline-primary me-2"><a  href="login.jsp">Login</a></button>
-                            <button type="button" class="btn btn-primary">Sign-up</button>
+                            <a href="login.jsp"> <button type="button" class="btn btn-outline-primary me-2">Entrar</button></a>
+                             <a href="cadastroCliente.html"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
                         </div>
                     </header>
                 </div>

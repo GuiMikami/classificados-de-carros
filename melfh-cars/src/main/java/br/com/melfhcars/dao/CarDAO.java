@@ -193,6 +193,47 @@ public class CarDAO {
 
 
     }
+    public List<Carro> tebelaCarroPerfil() {
 
+        String SQL = "SELECT NOMECARRO, ANO, KM, VALOR,PLACA FROM CARRO ORDER BY PLACA DESC";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Carro> cars = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String carName = resultSet.getString("NOMECARRO");
+                String carAno = resultSet.getString("ANO");
+                String carKm = resultSet.getString("KM");
+                String carValor = resultSet.getString("VALOR");
+                String carPlaca = resultSet.getString("PLACA");
+
+
+                Carro car = new Carro(carPlaca,carName,carAno,carKm,carValor);
+
+                cars.add(car);
+
+            }
+            System.out.println("success in select * car");
+
+            connection.close();
+
+            return cars;
+
+
+        } catch (Exception e) {
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+        }
+    }
 
 }
