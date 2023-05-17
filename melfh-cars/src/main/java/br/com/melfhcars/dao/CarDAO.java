@@ -92,7 +92,6 @@ public class CarDAO {
         try {
 
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
@@ -110,7 +109,7 @@ public class CarDAO {
         }
     }
 
-    public Carro descricao(String placa){
+    public Carro descricao(String placa) {
 
         String SQL = "SELECT NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,TRANSMISSAO,ACIONAMENTO,DOCUMENTO,CONDICAO,FINALPLACA FROM CARRO WHERE PLACA = ? ";
 
@@ -152,7 +151,6 @@ public class CarDAO {
                 return car;
 
             }
-
 
 
         } catch (Exception e) {

@@ -3,6 +3,7 @@
     String erro = (String) request.getAttribute("erro");
 %>
 <!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html>
     <head>
         <title>Tela de Login</title>
