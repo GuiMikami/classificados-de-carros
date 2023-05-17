@@ -46,7 +46,7 @@ public class CreateCarServlet extends HttpServlet {
 
 
         var carro = new Carro();
-        carro.setPlaca(placa);
+        carro.setPlaca(placa.toUpperCase());
         carro.setNomeCarro(nomeCarro);
         carro.setAno(ano);
         carro.setKm(km);

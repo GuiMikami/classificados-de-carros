@@ -91,8 +91,8 @@
                 <th scope="row"> <%=tabelaCarro.get(i).getValor()%> </th>
                 <th scope="row">
                 <div class="container">
-                                <a href="/delete-car?placa=<%=tabelaCarro.get(i).getPlaca()%>"><button type="button" class="btn btn-warning">Primary</button></a>
-                                <button type="button" class="btn btn-danger">Secondary</button>
+                                <a href="/delete-car?placa=<%=tabelaCarro.get(i).getPlaca()%>"><button type="button" class="btn btn-danger">Deletar</button></a>
+                                <button type="button" class="btn btn-warning">Alterar</button>
                             </div>
                             </th>
 

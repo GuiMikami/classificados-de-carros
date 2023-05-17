@@ -20,7 +20,7 @@
         <title>Página Inicial</title>
 
     </head>
-    <form
+    <form>
         <body>
         <div class="container">
             <div class="bg-dark">
@@ -38,14 +38,10 @@
                         </ul>
 
                         <div class="col-md-3 text-end">
-<<<<<<< HEAD
 
-                            <button type="button" class="btn btn-outline-primary me-2"><a  href="login">Login</a></button>
-                            <button type="button" class="btn btn-primary">Sign-up</button>
-=======
                             <a href="login.jsp"> <button type="button" class="btn btn-outline-primary me-2">Entrar</button></a>
                              <a href="cadastroCliente.html"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
->>>>>>> a88c615867fa8f8e754132b22ab7a83711433f08
+
                         </div>
                     </header>
                 </div>

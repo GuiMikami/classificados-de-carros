@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 <%@ page contentType="text/html; charset=UTF-8" %>
 <head>
+  <html lang="pt-br">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
     crossorigin="anonymous"></script>
   <link href="cadastroCarro.css" rel="stylesheet">
   <title>Document</title>
+
 </head>
 
 <body>
@@ -43,7 +44,7 @@
     <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
 
       <label for="placa">Placa:</label>
-      <input  type="text" id="placa" name="placa" minlength="7" maxlength="7"  required>
+      <input  type="text" id="placa" name="placa" minlength="7" maxlength="7"" required>
 
       <label for="marca">Marca/Modelo:</label>
       <input  type="text" id="marca" name="marca"  required placeholder="Modelo e Marca do seu carro">
@@ -58,7 +59,7 @@
       <input type="number" id="km" name="km" maxlength="13" required>
 
       <label for="valor">Preço:</label>
-      <input type="number" id="valor" name="valor" required>
+      <input type="number" id="valor" step="0.01" name="valor" required>
 
       <label for="transmissao">Transmissão</label>
       <select id="transmissao" name="transmissao" required>

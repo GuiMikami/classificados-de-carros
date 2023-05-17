@@ -19,11 +19,7 @@ public class DeleteCarServlet extends HttpServlet {
 
         new CarDAO().deletarCarro(placa);
 
-<<<<<<< HEAD
-        resp.sendRedirect("/tela-perfil"); // precisa alterar redirecionamento
-=======
         resp.sendRedirect("/tela-perfil");
->>>>>>> a88c615867fa8f8e754132b22ab7a83711433f08
 
     }
 }
