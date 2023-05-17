@@ -36,7 +36,7 @@
 
 
         <div class ="signup-link-container">
-            <p> Não possui uma conta? <a href="#">Fazer Cadastro</a></p>
+            <p> Não possui uma conta? <a href="cadastroCliente.html">Fazer Cadastro</a></p>
         </div>
     </div>
 

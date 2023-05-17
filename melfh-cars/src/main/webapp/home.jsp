@@ -39,7 +39,7 @@
 
                         <div class="col-md-3 text-end">
 
-                            <button type="button" class="btn btn-outline-primary me-2"><a  href="login.jsp">Login</a></button>
+                            <button type="button" class="btn btn-outline-primary me-2"><a  href="login">Login</a></button>
                             <button type="button" class="btn btn-primary">Sign-up</button>
                         </div>
                     </header>
