@@ -1,4 +1,10 @@
+<%@page import="java.util.List"%>
+<%@page import="br.com.melfhcars.model.Carro"%>
+<% List<Carro> tabelaCarro = (List<Carro>) request.getAttribute("listCar");%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,24 +73,37 @@
                 <th scope="col">Carro</th>
                 <th scope="col">Ano</th>
                 <th scope="col">Km</th>
+                <th scope="col">Valor</th>
+                <th scope="col">   </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody>]
+                 <form action="/delete-car" method="post">
+
+                <% if (tabelaCarro != null) { %>
+                   <% for (int i = 0; i < tabelaCarro.size(); i++) { %>
+
               <tr>
-                <th scope="row">1</th>
+                <th scope="row"> <%=tabelaCarro.get(i).getPlaca()%> </th>
+                <th scope="row"> <%=tabelaCarro.get(i).getNomeCarro()%> </th>
+                <th scope="row"> <%=tabelaCarro.get(i).getAno()%> </th>
+                <th scope="row"> <%=tabelaCarro.get(i).getKm()%> </th>
+                <th scope="row"> <%=tabelaCarro.get(i).getValor()%> </th>
+                <th scope="row">
+                <div class="container">
+                                <a href="/delete-car?placa=<%=tabelaCarro.get(i).getPlaca()%>"><button type="button" class="btn btn-warning">Primary</button></a>
+                                <button type="button" class="btn btn-danger">Secondary</button>
+                            </div>
+                            </th>
+
               </tr>
-              <tr>
-                <th scope="row">2</th>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-              </tr>
+      <%}%>
+<%} else { %>
+                    <jsp:forward page="/Perfil.jsp" />
+               <% } %>
+               </form>
             </tbody>
           </table>
-            <div class="container">
-                <button type="button" class="btn btn-warning">Primary</button>
-                <button type="button" class="btn btn-danger">Secondary</button>
-            </div>
         </div>
 </body>
 </html>

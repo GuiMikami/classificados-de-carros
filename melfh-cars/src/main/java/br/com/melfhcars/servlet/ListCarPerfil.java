@@ -9,20 +9,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.http.HttpClient;
 import java.util.List;
 
-@WebServlet("/mostrar-carro")
-public class ListCarHome extends HttpServlet {
+@WebServlet("/tela-perfil")
+public class ListCarPerfil extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-      List<Carro> cars = new CarDAO().mostrarCarro();
+        List<Carro> listCar = new CarDAO().tebelaCarroPerfil();
 
-      req.setAttribute("cars",cars);
+        req.setAttribute("listCar",listCar);
 
-      req.getRequestDispatcher("home.jsp").forward(req, resp);
-
-
+        req.getRequestDispatcher("Perfil.jsp").forward(req,resp);
     }
 }

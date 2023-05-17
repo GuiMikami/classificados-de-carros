@@ -13,13 +13,17 @@ import java.io.IOException;
 public class DeleteCarServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
         String placa = req.getParameter("placa");
 
         new CarDAO().deletarCarro(placa);
 
+<<<<<<< HEAD
         resp.sendRedirect("/tela-perfil"); // precisa alterar redirecionamento
+=======
+        resp.sendRedirect("/tela-perfil");
+>>>>>>> a88c615867fa8f8e754132b22ab7a83711433f08
 
     }
 }
