@@ -78,7 +78,7 @@
               </tr>
             </thead>
             <tbody>]
-
+                 <form action="/delete-car" method="post">
 
                 <% if (tabelaCarro != null) { %>
                    <% for (int i = 0; i < tabelaCarro.size(); i++) { %>
@@ -91,15 +91,17 @@
                 <th scope="row"> <%=tabelaCarro.get(i).getValor()%> </th>
                 <th scope="row">
                 <div class="container">
-                                <button type="button" class="btn btn-warning">Primary</button>
+                                <a href="/delete-car?placa=<%=tabelaCarro.get(i).getPlaca()%>"><button type="button" class="btn btn-warning">Primary</button></a>
                                 <button type="button" class="btn btn-danger">Secondary</button>
                             </div>
                             </th>
+
               </tr>
       <%}%>
 <%} else { %>
                     <jsp:forward page="/Perfil.jsp" />
                <% } %>
+               </form>
             </tbody>
           </table>
         </div>

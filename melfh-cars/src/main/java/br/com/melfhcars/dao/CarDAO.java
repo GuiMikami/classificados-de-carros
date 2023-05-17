@@ -87,7 +87,7 @@ public class CarDAO {
 
     public void deletarCarro(String placa) {
 
-        String SQL = "DELETE CARRO WHERE PLACA = ? ";
+        String SQL = "DELETE FROM CARRO WHERE PLACA = ? ";
 
         try {
 

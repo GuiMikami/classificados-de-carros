@@ -13,13 +13,13 @@ import java.io.IOException;
 public class DeleteCarServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
         String placa = req.getParameter("placa");
 
         new CarDAO().deletarCarro(placa);
 
-        resp.sendRedirect("/mostrar-carro");
+        resp.sendRedirect("/tela-perfil");
 
     }
 }
