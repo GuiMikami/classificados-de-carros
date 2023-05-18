@@ -47,6 +47,21 @@ public class Carro {
         this.fotoCarro = fotoCarro;
     }
 
+    public Carro(String placa, String nomeCarro, String ano, String km, String finalPlaca, String valor, String estado, String transmissao, String acionamento, String documento, String condicoes, String fotoCarro) {
+        this.placa = placa;
+        this.nomeCarro = nomeCarro;
+        this.ano = ano;
+        this.km = km;
+        this.finalPlaca = finalPlaca;
+        this.valor = valor;
+        this.estado = estado;
+        this.transmissao = transmissao;
+        this.acionamento = acionamento;
+        this.documento = documento;
+        this.condicoes = condicoes;
+        this.fotoCarro = fotoCarro;
+    }
+
     public Carro(String placa, String nomeCarro, String ano, String km, String valor) {
         this.placa = placa;
         this.nomeCarro = nomeCarro;

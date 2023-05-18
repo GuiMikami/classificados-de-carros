@@ -26,9 +26,9 @@ public class CreateCarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        //
-        String placaCarro = request.getParameter("PLACA");
-        //
+
+        String placaCarro = request.getParameter("placa");
+
 
         Map<String, String> parameters = uploadImage(request);
         String placa = parameters.get("placa");
@@ -65,15 +65,13 @@ public class CreateCarServlet extends HttpServlet {
 
 
         // atualizar informações do carro
-        //if(placaCarro.isBlank()){
-        //    carroDAO.createCar(carro);
-        //}else {
-        //    carroDAO.atualizarCarro(carro);
-        //}
-
+        if(placaCarro.isBlank()){
+            carroDAO.createCar(carro);
+        }else {
+            carroDAO.atualizarCarro(carro);
+        }
 
         request.getRequestDispatcher("cadastroCarro.jsp").forward(request, response);
-
 
     }
 

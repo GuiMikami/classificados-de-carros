@@ -193,7 +193,7 @@ public class CarDAO {
     }
     public List<Carro> tebelaCarroPerfil() {
 
-        String SQL = "SELECT NOMECARRO, ANO, KM, VALOR,PLACA FROM CARRO ORDER BY PLACA DESC";
+        String SQL = "SELECT PLACA, NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,TRANSMISSAO,ACIONAMENTO,DOCUMENTO,CONDICAO,FINALPLACA FROM CARRO ORDER BY PLACA DESC";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -208,14 +208,22 @@ public class CarDAO {
 
             while (resultSet.next()) {
 
+                String carPlaca = resultSet.getString("PLACA");
                 String carName = resultSet.getString("NOMECARRO");
                 String carAno = resultSet.getString("ANO");
                 String carKm = resultSet.getString("KM");
+                String carEstado = resultSet.getString("ESTADO");
                 String carValor = resultSet.getString("VALOR");
-                String carPlaca = resultSet.getString("PLACA");
+                String carFoto = resultSet.getString("FOTOCARRO");
+                String carTransmissao = resultSet.getString("TRANSMISSAO");
+                String carFinalPlaca = resultSet.getString("FINALPLACA");
+                String carAcionamento = resultSet.getString("ACIONAMENTO");
+                String carDocumento = resultSet.getString("DOCUMENTO");
+                String carCondicao = resultSet.getString("CONDICAO");
 
 
-                Carro car = new Carro(carPlaca,carName,carAno,carKm,carValor);
+                Carro car = new Carro(carPlaca,carName, carAno, carKm, carFinalPlaca, carValor, carEstado, carTransmissao, carAcionamento, carDocumento, carCondicao, carFoto);
+
 
                 cars.add(car);
 

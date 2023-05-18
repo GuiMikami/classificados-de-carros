@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-
+    <link href="Perfil.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -71,36 +71,41 @@
               <tr>
                 <th scope="col" >Placa</th>
                 <th scope="col">Carro</th>
+                 <th class="hidden-column" scope="col">Final da Placa</th>
                 <th scope="col">Ano</th>
                 <th scope="col">Km</th>
                 <th scope="col">Valor</th>
+                <th class="hidden-column" scope="col">Transmissão</th>
+                 <th class="hidden-column" scope="col">Acionamento</th>
                 <th scope="col">   </th>
               </tr>
             </thead>
-            <tbody>]
-                 <form action="/delete-car" method="post">
+            <tbody>
 
-                <% if (tabelaCarro != null) { %>
+                 <form action="/delete-car" method="post">
+                    <% if (tabelaCarro != null) { %>
                    <% for (int i = 0; i < tabelaCarro.size(); i++) { %>
 
               <tr>
                 <th scope="row"> <%=tabelaCarro.get(i).getPlaca()%> </th>
                 <th scope="row"> <%=tabelaCarro.get(i).getNomeCarro()%> </th>
+                <th class="hidden-column" scope="row"> <%=tabelaCarro.get(i).getFinalPlaca()%></th>
                 <th scope="row"> <%=tabelaCarro.get(i).getAno()%> </th>
                 <th scope="row"> <%=tabelaCarro.get(i).getKm()%> </th>
                 <th scope="row"> <%=tabelaCarro.get(i).getValor()%> </th>
+                 <th class="hidden-column" scope="row"> <%=tabelaCarro.get(i).getTransmissao()%></th>
+                  <th class="hidden-column" scope="row">  <%=tabelaCarro.get(i).getAcionamento()%></th>
+
                 <th scope="row">
                 <div class="container">
                                 <a href="/delete-car?placa=<%=tabelaCarro.get(i).getPlaca()%>"><button type="button" class="btn btn-danger">Deletar</button></a>
-                                <button type="button" class="btn btn-warning">Alterar</button>
+                                <a href="cadastroCarro.jsp?placa=<%= tabelaCarro.get(i).getPlaca() %>&nomeCarro=<%=tabelaCarro.get(i).getNomeCarro() %> &finalPlaca=<%= tabelaCarro.get(i).getFinalPlaca() %>&ano=<%=tabelaCarro.get(i).getAno()%>&km=<%=tabelaCarro.get(i).getKm()%>&valor=<%=tabelaCarro.get(i).getValor()%>&transmissao=<%=tabelaCarro.get(i).getTransmissao()%>&acionamento=<%=tabelaCarro.get(i).getAcionamento()%>"><button type="button" class="btn btn-warning">Alterar</button></a>
                             </div>
                             </th>
 
               </tr>
       <%}%>
-<%} else { %>
-                    <jsp:forward page="/Perfil.jsp" />
-               <% } %>
+      <%}%>
                </form>
             </tbody>
           </table>
