@@ -15,10 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 import static org.apache.commons.fileupload.servlet.ServletFileUpload.isMultipartContent;
 @WebServlet("/cadastro-carro")
 public class CreateCarServlet extends HttpServlet {
@@ -26,8 +24,6 @@ public class CreateCarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
-        String placaCarro = request.getParameter("placa");
 
 
         Map<String, String> parameters = uploadImage(request);
@@ -46,7 +42,7 @@ public class CreateCarServlet extends HttpServlet {
 
 
         var carro = new Carro();
-        carro.setPlaca(placa.toUpperCase());
+        carro.setPlaca(placa.toUpperCase().trim());
         carro.setNomeCarro(nomeCarro);
         carro.setAno(ano);
         carro.setKm(km);
@@ -64,8 +60,8 @@ public class CreateCarServlet extends HttpServlet {
         carroDAO.createCar(carro);
 
 
-        // atualizar informações do carro
-        if(placaCarro.isBlank()){
+        String placaCarro = request.getParameter("placa");
+        if (placaCarro != null && !Objects.requireNonNull(placaCarro).isBlank()) {
             carroDAO.createCar(carro);
         }else {
             carroDAO.atualizarCarro(carro);

@@ -166,7 +166,7 @@ public class CarDAO {
 
     public void atualizarCarro(Carro carro) {
 
-        String SQL = "UPDATE CARRO SET NOMECARRO, ANO, KM, ESTADO, VALOR, FINALPLACA, = ? WHERE PLACA = ?";
+        String SQL = "UPDATE CARRO SET NOMECARRO, ANO, KM, ESTADO, VALOR, FINALPLACA, WHERE PLACA = ?";
 
         try {
 

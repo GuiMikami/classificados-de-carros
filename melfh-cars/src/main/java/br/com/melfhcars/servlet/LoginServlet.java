@@ -39,9 +39,8 @@ public class LoginServlet extends HttpServlet {
             if (rsUsuarioDao.next()) {
 
                 HttpSession session = request.getSession();
-                session.setAttribute("UsuárioLogado", usuarioDao );
-                RequestDispatcher rd = request.getRequestDispatcher("Perfil.jsp");
-                rd.forward(request,response);
+                session.setAttribute("UsuárioLogado", usuarioDao);
+                response.sendRedirect("/tela-perfil"); // foi aqui a alteração
             }else{
 
 

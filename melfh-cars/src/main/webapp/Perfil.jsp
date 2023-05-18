@@ -68,6 +68,7 @@
             <h1> Meus Carros </h1>
         <table class="table">
             <thead>
+
               <tr>
                 <th scope="col" >Placa</th>
                 <th scope="col">Carro</th>
@@ -77,35 +78,38 @@
                 <th scope="col">Valor</th>
                 <th class="hidden-column" scope="col">Transmissão</th>
                  <th class="hidden-column" scope="col">Acionamento</th>
+                 <th class="hidden-column" scope="col">documento</th>
+                 <th class="hidden-column" scope="col">condição</th>
+                 <th class="hidden-column" scope="col">Fotos do carro</th>
                 <th scope="col">   </th>
               </tr>
             </thead>
             <tbody>
-
-                 <form action="/delete-car" method="post">
-                    <% if (tabelaCarro != null) { %>
-                   <% for (int i = 0; i < tabelaCarro.size(); i++) { %>
+      <c:forEach var="car" items="${listCar}">
 
               <tr>
-                <th scope="row"> <%=tabelaCarro.get(i).getPlaca()%> </th>
-                <th scope="row"> <%=tabelaCarro.get(i).getNomeCarro()%> </th>
-                <th class="hidden-column" scope="row"> <%=tabelaCarro.get(i).getFinalPlaca()%></th>
-                <th scope="row"> <%=tabelaCarro.get(i).getAno()%> </th>
-                <th scope="row"> <%=tabelaCarro.get(i).getKm()%> </th>
-                <th scope="row"> <%=tabelaCarro.get(i).getValor()%> </th>
-                 <th class="hidden-column" scope="row"> <%=tabelaCarro.get(i).getTransmissao()%></th>
-                  <th class="hidden-column" scope="row">  <%=tabelaCarro.get(i).getAcionamento()%></th>
-
+                <th scope="row"> ${car.placa} </th>
+                <th scope="row"> ${car.nomeCarro} </th>
+                <th class="hidden-column" scope="row"> ${car.finalPlaca} </th>
+                <th scope="row"> ${car.ano} </th>
+                <th scope="row"> ${car.km} </th>
+                <th scope="row"> ${car.valor} </th>
+                 <th class="hidden-column" scope="row"> ${car.transmissao} </th>
+                  <th class="hidden-column" scope="row"> ${car.acionamento}  </th>
+                   <th class="hidden-column" scope="col">${car.documento}</th>
+                   <th class="hidden-column" scope="col">${car.condicoes}</th>
+                   <th class="hidden-column" scope="col">${car.fotoCarro}</th>
                 <th scope="row">
+                <form action="/delete-car" method="post">
                 <div class="container">
-                                <a href="/delete-car?placa=<%=tabelaCarro.get(i).getPlaca()%>"><button type="button" class="btn btn-danger">Deletar</button></a>
-                                <a href="cadastroCarro.jsp?placa=<%= tabelaCarro.get(i).getPlaca() %>&nomeCarro=<%=tabelaCarro.get(i).getNomeCarro() %> &finalPlaca=<%= tabelaCarro.get(i).getFinalPlaca() %>&ano=<%=tabelaCarro.get(i).getAno()%>&km=<%=tabelaCarro.get(i).getKm()%>&valor=<%=tabelaCarro.get(i).getValor()%>&transmissao=<%=tabelaCarro.get(i).getTransmissao()%>&acionamento=<%=tabelaCarro.get(i).getAcionamento()%>"><button type="button" class="btn btn-warning">Alterar</button></a>
+                                <a href="/delete-car?placa=${car.placa}"><button type="button" class="btn btn-danger">Deletar</button></a>
+                                <a href="cadastroCarro.jsp?placa= ${car.placa}&nomeCarro=${car.nomeCarro}&finalPlaca=${car.finalPlaca}&ano=${car.ano}&km=${car.km}&valor=${car.valor}&transmissao=${car.transmissao}&acionamento=${car.acionamento}&documento=${car.documento}&condicoes=${car.condicoes}&imagem=${car.fotoCarro}"><button type="button" class="btn btn-warning">Alterar</button></a>
                             </div>
                             </th>
 
               </tr>
-      <%}%>
-      <%}%>
+              </c:forEach>
+
                </form>
             </tbody>
           </table>
