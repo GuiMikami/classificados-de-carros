@@ -60,8 +60,7 @@ public class CreateCarServlet extends HttpServlet {
         carroDAO.createCar(carro);
 
 
-        String placaCarro = request.getParameter("placa");
-        if (placaCarro != null && !Objects.requireNonNull(placaCarro).isBlank()) {
+        if (placa.isBlank()) {
             carroDAO.createCar(carro);
         }else {
             carroDAO.atualizarCarro(carro);

@@ -166,7 +166,7 @@ public class CarDAO {
 
     public void atualizarCarro(Carro carro) {
 
-        String SQL = "UPDATE CARRO SET NOMECARRO, ANO, KM, ESTADO, VALOR, FINALPLACA, WHERE PLACA = ?";
+        String SQL = "UPDATE CARRO SET NOMECARRO = ?, ANO = ?, KM = ?, ESTADO = ?, VALOR = ?, FINALPLACA = ?, TRANSMISSAO=?, ACIONAMENTO=?,DOCUMENTO=?,CONDICAO=?,FOTOCARRO=? WHERE PLACA=?";
 
         try {
 
@@ -180,7 +180,13 @@ public class CarDAO {
             ps.setString(4, carro.getEstado());
             ps.setString(5, carro.getValor());
             ps.setString(6, carro.getFinalPlaca());
-
+            ps.setString(7,carro.getTransmissao());
+            ps.setString(8,carro.getAcionamento());
+            ps.setString(9,carro.getDocumento());
+            ps.setString(10,carro.getCondicoes());
+            ps.setString(11,carro.getFotoCarro());
+            ps.setString(12,carro.getPlaca());
+            ps.execute();
             System.out.println("sucess in update car");
             connection.close();
 
