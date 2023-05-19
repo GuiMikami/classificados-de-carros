@@ -16,75 +16,77 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="bg-dark">
-      <div class="logo titulo">
-        <header
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
-            <img src="img/Logo da Melph.png" width="140px" alt="">
-          </a>
+ <div class="container">
+             <div class="bg-dark">
+                 <div class="logo titulo">
+                     <header
+                         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+                             <img src="img/Logo da Melph.png" width="140px" alt="">
+                         </a>
 
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="cadastroCarro.html" class="nav-link px-2 link-dark1">Vender carro</a></li>
-            <li><a href="anuncio.html" class="nav-link px-2 link-dark1">Comprar carro </a></li>
-            <li><a href="sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
-          </ul>
+                         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                             <li><a href="cadastroCarro.jsp" class="nav-link px-2 link-dark1">Vender carro</a></li>
+                             <li><a href="Anuncio.html" class="nav-link px-2 link-dark1">Comprar carro </a></li>
+                             <li><a href="sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
+                         </ul>
 
-          <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">Login</button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
-          </div>
-        </header>
-      </div>
-    </div>
-  </div>
+                         <div class="col-md-3 text-end">
+
+                             <a href="login.jsp"> <button type="button" class="btn btn-outline-primary me-2">Entrar</button></a>
+                              <a href="cadastroCliente.html"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
+
+                         </div>
+                     </header>
+                 </div>
+             </div>
+         </div>
 
   <div class="container">
     <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
 
       <label for="placa">Placa:</label>
-      <input  type="text" id="placa" name="placa" minlength="7" maxlength="7"" required>
+      <input  type="text" id="placa" name="placa" minlength="7" maxlength="7" value="${param.placa}" required>
 
       <label for="marca">Marca/Modelo:</label>
-      <input  type="text" id="marca" name="marca"  required placeholder="Modelo e Marca do seu carro">
+      <input  type="text" id="marca" name="marca" value="${param.nomeCarro}"  placeholder="Modelo e Marca do seu carro" required>
 
       <label for="finalplaca">Final da Placa:</label>
-      <input type="text" id="finalplaca" name="finalplaca"  maxlength="1" required>
+      <input type="text" id="finalplaca" name="finalplaca"  maxlength="1" value="${param.finalPlaca}" required>
 
       <label for="ano">Ano:</label>
-      <input type="text" id="ano" name="ano" required>
+      <input type="text" id="ano" name="ano" value="${param.ano}" required>
 
       <label for="Km">Quilometragem:</label>
-      <input type="number" id="km" name="km" maxlength="13" required>
+      <input type="number" id="km" name="km" maxlength="13" value="${param.km}" required>
 
       <label for="valor">Preço:</label>
-      <input type="number" id="valor" step="0.01" name="valor" required>
+      <input type="number" id="valor" step="0.01" name="valor" value="${param.valor}" required>
 
       <label for="transmissao">Transmissão</label>
       <select id="transmissao" name="transmissao" required>
-        <option value=""></option>
+        <option value="">${param.transmissao}</option>
         <option value="automatico">Automatico</option>
         <option value="manual">Manual</option>
       </select>
 
       <label for="acionamento">Acionamento de rodas:</label>
       <select id="acionamento" name="acionamento" required>
-        <option value=""></option>
+        <option value="">${param.acionamento}</option>
         <option value="2X4">2X4</option>
         <option value="4x4">4X4</option>
       </select>
 
       <label for="documento">Os documentos do seu carro estão:</label>
-      <select id="documento" name="documento" required>
-        <option value=""></option>
+      <select id="documento" name="documento"  required>
+        <option value="">${param.documento}</option>
         <option value="emdia">Em Dia</option>
         <option value="Atrasado">Atrasado</option>
       </select>
 
       <label for="condicao">Condição que seu carro se encontra?</label>
-      <select id="condicao" name="condicao" required>
-        <option value=""></option>
+      <select id="condicao" name="condicao"  required>
+        <option value="">${param.condicoes}</option>
         <option value="novo">Novo</option>
         <option value="usado">Usado</option>
         <option value="regular">Regular</option>
@@ -93,13 +95,13 @@
 
       <div>
         <label for="file">Choose file</label>
-        <input type="file" name="file" id="file" accept="image/jpeg">
+        <input type="file" name="file" id="file" accept="image/jpeg" ${param.imagem}>
       </div>
 
       <div class="local">
         <h5>Localização</h5>
         <label for="estado">Estado:</label>
-        <input type="text" id="estado" name="estado" maxlength="40" required>
+        <input type="text" id="estado" name="estado" maxlength="40" value="${param.estado}"required>
 
       <section class="but" id="but">
         <button type="submit" style="border-radius: 5px;">Cadastrar</button>

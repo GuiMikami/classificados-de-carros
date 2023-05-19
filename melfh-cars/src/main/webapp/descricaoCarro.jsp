@@ -75,16 +75,15 @@
 
     <h3>Geral</h3>
     <ul class="descricao">
-      <li>Transmissão
-        <label> ? </label>
+      <li>Transmissão: ${requestScope.descricao.transmissao}
       </li>
-      <li>Acionamento de Rodas</li>
-      <li>Final da Placa</li>
+      <li>Acionamento de Rodas: ${requestScope.descricao.acionamento}</li>
+      <li>Final da Placa: ${requestScope.descricao.finalPlaca}</li>
     </ul>
     <ul class="descricao">
-      <li>N° de Portas</li>
-      <li>Documentação</li>
-      <li>Estado de Uso</li>
+      <li>N° de Portas: 4</li>
+      <li>Documentação: ${requestScope.descricao.documento}</li>
+      <li>Estado de Uso: ${requestScope.descricao.condicoes}</li>
     </ul>
   </div>
 

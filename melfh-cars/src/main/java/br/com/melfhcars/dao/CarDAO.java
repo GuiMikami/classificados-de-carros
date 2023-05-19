@@ -42,7 +42,7 @@ public class CarDAO {
 
     public List<Carro> mostrarCarro() {
 
-        String SQL = "SELECT TOP 4 NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO ORDER BY PLACA DESC";
+        String SQL = "SELECT TOP 5 NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO ORDER BY PLACA DESC";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -166,7 +166,7 @@ public class CarDAO {
 
     public void atualizarCarro(Carro carro) {
 
-        String SQL = "UPDATE CARRO SET NOMECARRO, ANO, KM, ESTADO, VALOR, FINALPLACA, = ? WHERE PLACA = ?";
+        String SQL = "UPDATE CARRO SET NOMECARRO = ?, ANO = ?, KM = ?, ESTADO = ?, VALOR = ?, FINALPLACA = ?, TRANSMISSAO=?, ACIONAMENTO=?,DOCUMENTO=?,CONDICAO=?,FOTOCARRO=? WHERE PLACA=?";
 
         try {
 
@@ -180,7 +180,13 @@ public class CarDAO {
             ps.setString(4, carro.getEstado());
             ps.setString(5, carro.getValor());
             ps.setString(6, carro.getFinalPlaca());
-
+            ps.setString(7,carro.getTransmissao());
+            ps.setString(8,carro.getAcionamento());
+            ps.setString(9,carro.getDocumento());
+            ps.setString(10,carro.getCondicoes());
+            ps.setString(11,carro.getFotoCarro());
+            ps.setString(12,carro.getPlaca());
+            ps.execute();
             System.out.println("sucess in update car");
             connection.close();
 
@@ -193,7 +199,7 @@ public class CarDAO {
     }
     public List<Carro> tebelaCarroPerfil() {
 
-        String SQL = "SELECT NOMECARRO, ANO, KM, VALOR,PLACA FROM CARRO ORDER BY PLACA DESC";
+        String SQL = "SELECT PLACA, NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,TRANSMISSAO,ACIONAMENTO,DOCUMENTO,CONDICAO,FINALPLACA FROM CARRO ORDER BY PLACA DESC";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -208,14 +214,22 @@ public class CarDAO {
 
             while (resultSet.next()) {
 
+                String carPlaca = resultSet.getString("PLACA");
                 String carName = resultSet.getString("NOMECARRO");
                 String carAno = resultSet.getString("ANO");
                 String carKm = resultSet.getString("KM");
+                String carEstado = resultSet.getString("ESTADO");
                 String carValor = resultSet.getString("VALOR");
-                String carPlaca = resultSet.getString("PLACA");
+                String carFoto = resultSet.getString("FOTOCARRO");
+                String carTransmissao = resultSet.getString("TRANSMISSAO");
+                String carFinalPlaca = resultSet.getString("FINALPLACA");
+                String carAcionamento = resultSet.getString("ACIONAMENTO");
+                String carDocumento = resultSet.getString("DOCUMENTO");
+                String carCondicao = resultSet.getString("CONDICAO");
 
 
-                Carro car = new Carro(carPlaca,carName,carAno,carKm,carValor);
+                Carro car = new Carro(carPlaca,carName, carAno, carKm, carFinalPlaca, carValor, carEstado, carTransmissao, carAcionamento, carDocumento, carCondicao, carFoto);
+
 
                 cars.add(car);
 
@@ -233,5 +247,48 @@ public class CarDAO {
             return Collections.emptyList();
         }
     }
+    public List<Carro> Anuncios() {
 
+        String SQL = "SELECT  NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO ORDER BY PLACA DESC";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Carro> cars = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String carName = resultSet.getString("NOMECARRO");
+                String carAno = resultSet.getString("ANO");
+                String carKm = resultSet.getString("KM");
+                String carEstado = resultSet.getString("ESTADO");
+                String carValor = resultSet.getString("VALOR");
+                String carFoto = resultSet.getString("FOTOCARRO");
+                String carPlaca = resultSet.getString("PLACA");
+
+
+                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado, carFoto, carPlaca);
+
+                cars.add(car);
+
+            }
+            System.out.println("success in select * car");
+
+            connection.close();
+
+            return cars;
+
+
+        } catch (Exception e) {
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+        }
+    }
 }

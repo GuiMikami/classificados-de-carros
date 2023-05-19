@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-
+    <link href="Perfil.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -68,39 +68,48 @@
             <h1> Meus Carros </h1>
         <table class="table">
             <thead>
+
               <tr>
                 <th scope="col" >Placa</th>
                 <th scope="col">Carro</th>
+                 <th class="hidden-column" scope="col">Final da Placa</th>
                 <th scope="col">Ano</th>
                 <th scope="col">Km</th>
                 <th scope="col">Valor</th>
+                <th class="hidden-column" scope="col">Transmissão</th>
+                 <th class="hidden-column" scope="col">Acionamento</th>
+                 <th class="hidden-column" scope="col">documento</th>
+                 <th class="hidden-column" scope="col">condição</th>
+                 <th class="hidden-column" scope="col">Fotos do carro</th>
                 <th scope="col">   </th>
               </tr>
             </thead>
-            <tbody>]
-                 <form action="/delete-car" method="post">
-
-                <% if (tabelaCarro != null) { %>
-                   <% for (int i = 0; i < tabelaCarro.size(); i++) { %>
+            <tbody>
+      <c:forEach var="car" items="${listCar}">
 
               <tr>
-                <th scope="row"> <%=tabelaCarro.get(i).getPlaca()%> </th>
-                <th scope="row"> <%=tabelaCarro.get(i).getNomeCarro()%> </th>
-                <th scope="row"> <%=tabelaCarro.get(i).getAno()%> </th>
-                <th scope="row"> <%=tabelaCarro.get(i).getKm()%> </th>
-                <th scope="row"> <%=tabelaCarro.get(i).getValor()%> </th>
+                <th scope="row"> ${car.placa} </th>
+                <th scope="row"> ${car.nomeCarro} </th>
+                <th class="hidden-column" scope="row"> ${car.finalPlaca} </th>
+                <th scope="row"> ${car.ano} </th>
+                <th scope="row"> ${car.km} </th>
+                <th scope="row"> ${car.valor} </th>
+                 <th class="hidden-column" scope="row"> ${car.transmissao} </th>
+                  <th class="hidden-column" scope="row"> ${car.acionamento}  </th>
+                   <th class="hidden-column" scope="col">${car.documento}</th>
+                   <th class="hidden-column" scope="col">${car.condicoes}</th>
+                   <th class="hidden-column" scope="col">${car.fotoCarro}</th>
                 <th scope="row">
+                <form action="/delete-car" method="post">
                 <div class="container">
-                                <a href="/delete-car?placa=<%=tabelaCarro.get(i).getPlaca()%>"><button type="button" class="btn btn-danger">Deletar</button></a>
-                                <button type="button" class="btn btn-warning">Alterar</button>
+                                <a href="/delete-car?placa=${car.placa}"><button type="button" class="btn btn-danger">Deletar</button></a>
+                                <a href="cadastroCarro.jsp?placa= ${car.placa}&nomeCarro=${car.nomeCarro}&finalPlaca=${car.finalPlaca}&ano=${car.ano}&km=${car.km}&valor=${car.valor}&transmissao=${car.transmissao}&acionamento=${car.acionamento}&documento=${car.documento}&condicoes=${car.condicoes}&imagem=${car.fotoCarro}"><button type="button" class="btn btn-warning">Alterar</button></a>
                             </div>
                             </th>
 
               </tr>
-      <%}%>
-<%} else { %>
-                    <jsp:forward page="/Perfil.jsp" />
-               <% } %>
+              </c:forEach>
+
                </form>
             </tbody>
           </table>
