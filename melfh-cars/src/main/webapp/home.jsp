@@ -33,7 +33,7 @@
 
                         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                             <li><a href="cadastroCarro.jsp" class="nav-link px-2 link-dark1">Vender carro</a></li>
-                            <li><a href="Anuncio.html" class="nav-link px-2 link-dark1">Comprar carro </a></li>
+                            <li><a href="Anuncio.jsp" class="nav-link px-2 link-dark1">Comprar carro </a></li>
                             <li><a href="sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
                         </ul>
 
@@ -100,7 +100,6 @@
 
                 <% if (listaCars != null) { %>
                    <% for (int i = 0; i < listaCars.size(); i++) { %>
-                  
                 <div class="card" style="width: 18rem;">
                     <img src= "<%=listaCars.get(i).getFotoCarro()%>" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -129,7 +128,7 @@
                     <jsp:forward page="/mostrar-carro" />
                <% } %>
 
-            </div>              
+            </div>
         </div>
 
 

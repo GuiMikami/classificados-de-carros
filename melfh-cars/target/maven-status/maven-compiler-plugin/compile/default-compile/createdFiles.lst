@@ -10,4 +10,5 @@ br\com\melfhcars\servlet\ListCarPerfil.class
 br\com\melfhcars\servlet\DescCarServlet.class
 br\com\melfhcars\model\Carro.class
 br\com\melfhcars\servlet\DeleteCarServlet.class
+br\com\melfhcars\servlet\AnuncioServlet.class
 br\com\melfhcars\model\Login.class
