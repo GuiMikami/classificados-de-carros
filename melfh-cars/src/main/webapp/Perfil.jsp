@@ -55,9 +55,9 @@
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link text-white">
-                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                Customers
+              <a href="logout" class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16">/></svg>
+                Logout
               </a>
             </li>
           </ul>
