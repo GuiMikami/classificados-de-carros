@@ -27,7 +27,7 @@
 
                          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                              <li><a href="cadastroCarro.jsp" class="nav-link px-2 link-dark1">Vender carro</a></li>
-                             <li><a href="Anuncio.html" class="nav-link px-2 link-dark1">Comprar carro </a></li>
+                             <li><a href="/mostrar-carro" class="nav-link px-2 link-dark1">Comprar carro </a></li>
                              <li><a href="sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
                          </ul>
 

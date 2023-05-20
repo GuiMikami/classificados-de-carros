@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\CarDAO.java
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarHome.java
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\ClienteDAO.java
@@ -11,27 +9,7 @@ C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificad
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Login.java
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Carro.java
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateClienteServlet.java
+C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\AnuncioServlet.java
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DescCarServlet.java
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LoginServlet.java
 C:\Users\GuiMikami\OneDrive\Área de Trabalho\projeto-integrador-iii\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LogoutServlet.java
-=======
-=======
->>>>>>> f26db038f348de1fd08749b596a0e90f0a8fede1
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Cliente.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateClienteServlet.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarHome.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarPerfil.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DescCarServlet.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\CarDAO.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\LoginDAO.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\AnuncioServlet.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DeleteCarServlet.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\ClienteDAO.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Login.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LoginServlet.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Carro.java
-C:\Users\Telecentro Admin\Desktop\Pii3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateCarServlet.java
-<<<<<<< HEAD
->>>>>>> f26db038f348de1fd08749b596a0e90f0a8fede1
-=======
->>>>>>> f26db038f348de1fd08749b596a0e90f0a8fede1
