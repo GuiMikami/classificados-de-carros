@@ -1,6 +1,10 @@
+body {
+    margin: 0;
+}
+
 form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: 100px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -12,6 +16,10 @@ label {
     font-weight: bold;
 }
 
+header {
+    margin-bottom: 50px;
+}
+
 input {
     display: block;
     padding: 10px;
@@ -21,23 +29,29 @@ input {
     width: 100%;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     position: relative;
 
 }
-.local{
+
+.local {
     position: relative;
 
 }
-.container{
-    min-height: 50% ;
+
+.container {
+    min-height: 50%;
     min-width: 100%;
 }
-.but button{
+
+.but button {
     border-radius: 5px;
 }
 
-button {  border-radius: 5px;} 
+button {
+    border-radius: 5px;
+}
 
 select {
     display: block;
