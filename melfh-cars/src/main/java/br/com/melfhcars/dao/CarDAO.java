@@ -6,6 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 public class CarDAO {
 
@@ -247,9 +248,9 @@ public class CarDAO {
             return Collections.emptyList();
         }
     }
-    public List<Carro> Anuncios() {
+    public List<Carro> Anuncios(String busca) {
 
-        String SQL = "SELECT  NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO ORDER BY PLACA DESC";
+        String SQL = "SELECT  NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO WHERE LOWER(NOMECARRO) LIKE ? ORDER BY PLACA DESC";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -257,6 +258,8 @@ public class CarDAO {
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1,"%" + busca.toLowerCase() + "%");
 
             ResultSet resultSet = preparedStatement.executeQuery();
 

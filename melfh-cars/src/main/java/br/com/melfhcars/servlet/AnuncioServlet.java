@@ -10,20 +10,28 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 @WebServlet("/Anuncio")
 public class AnuncioServlet extends HttpServlet {
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<Carro> cars = new CarDAO().mostrarCarro();
+        String busca = req.getParameter("buscar");
 
-        req.setAttribute("cars",cars);
+        System.out.println(busca);
+
+        if (busca != null && !busca.isEmpty()) {
+            List<Carro> pesquisa = new CarDAO().Anuncios(busca);
+            req.setAttribute("cars", pesquisa);
+        } else {
+            List<Carro> cars = new CarDAO().mostrarCarro();
+            req.setAttribute("cars", cars);
+        }
 
         req.getRequestDispatcher("Anuncio.jsp").forward(req, resp);
-
-
     }
 
 

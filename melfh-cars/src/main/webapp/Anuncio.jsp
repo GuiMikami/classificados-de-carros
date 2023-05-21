@@ -49,13 +49,15 @@
 <div class="container">
     <div class="container1">
 <div class="sidebar">
+    <form action="/Anuncio" method="get">
     <div class="flex-shrink-0 p-3" style="width: 280px;">
         <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
         <div class="input-group">
-            <input type="text" id="pesquisa" class="form-control">
-            <button class="btn btn-primary">Pesquisar</button>
+            <input type="text" id="buscar" name="buscar" class="form-control">
+            <button type="submit" class="btn btn-primary">Pesquisar</button>
         </div>
     </div>
+</form>
     <ul class="list-unstyled ps-0 bg-dark">
         <li class="mb-1">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
@@ -63,22 +65,38 @@
             </button>
             <div class="collapse show" id="home-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Toyota</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Honda</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Civic</a></li>
+                    <li class="link-item"><a href="/Anuncio?buscar=Toyota" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Toyota</a></li>
+                    <li><a href="/Anuncio?buscar=Honda" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Honda</a></li>
+                    <li><a href="/Anuncio?buscar=Fiat" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Fiat</a></li>
+                    <li><a href="/Anuncio?buscar=Tesla" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Tesla</a></li>
+                    <li><a href="/Anuncio?buscar=Chevrolet" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Chevrolet</a></li>
+                    <li><a href="/Anuncio?buscar=Volkswagen" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Volkswagen</a></li>
+                    <li><a href="/Anuncio?buscar=Nissan" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Nissan</a></li>
+                    <li><a href="/Anuncio?buscar=Mercedes-Benz" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Mercedes-Benz</a></li>
+                    <li><a href="/Anuncio?buscar=Audi" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Audi</a></li>
+                    <li><a href="/Anuncio?buscar=BMW" class="link-body-emphasis d-inline-flex text-decoration-none rounded">BMW</a></li>
+                    <li><a href="/Anuncio?buscar=Hyundai" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Hyundai</a></li>
+                    <li><a href="/Anuncio?buscar=Kia" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Kia</a></li>
+                    <li><a href="/Anuncio?buscar=Mazda" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Mazda</a></li>
+                    <li><a href="/Anuncio?buscar=Subaru" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Subaru</a></li>
+
                 </ul>
             </div>
         </li>
         <li class="mb-1">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                Dashboard
+                Ano
             </button>
-            <div class="collapse" id="dashboard-collapse">
+            <div class="collapse"  id="dashboard-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2023</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2022</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2021</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2020</a></li>
+                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2019</a></li>
+                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2018</a></li>
+                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2017</a></li>
+                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2016</a></li>
                 </ul>
             </div>
         </li>
@@ -89,6 +107,7 @@
             <div class="collapse" id="orders-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
+                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
@@ -97,7 +116,6 @@
         </li>
     </ul>
 </div>
-
 <div class="container">
 
             <div class="conatiner-fluid d-flex flex-wrap ">
