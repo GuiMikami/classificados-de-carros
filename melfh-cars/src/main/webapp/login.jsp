@@ -4,20 +4,18 @@
         <html>
 
         <head>
-            <title>Tela de Login</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" type="text/css" href="login.css" media="screen" />
             <link rel="stylesheet" type="text/css" href="header.css" media="screen" />
-
-
+            <title>Tela de Login</title>
         </head>
 
         <body>
-            
+
             <header>
                 <div class="logo">
-                    <img src="img/Logo da Melph.png" width="140px" alt="Logo da empresa">
+                    <img src="img/Logo da Melph.png" width="140px" alt="logo">
                 </div>
                 <nav>
                     <ul>
