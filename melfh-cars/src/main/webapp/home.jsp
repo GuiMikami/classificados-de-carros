@@ -69,30 +69,27 @@
                                                                 <img src="img/Carro 1.jpg" class="d-block w-100"
                                                                     alt="...">
                                                                 <div class="carousel-caption d-none d-md-block">
-                                                                    <h5>First slide label</h5>
-                                                                    <p>Some representative placeholder content for the
-                                                                        first
-                                                                        slide.</p>
+                                                                    <h5>Explore a emoção sobre quatro rodas!</h5>
+                                                                    <p>Descubra o seu carro dos sonhos no nosso site,
+                                                                        onde potência, elegância e desempenho se encontram.</p>
                                                                 </div>
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <img src="img/Carro 2.jpg" class="d-block w-100"
                                                                     alt="...">
                                                                 <div class="carousel-caption d-none d-md-block">
-                                                                    <h5>Second slide label</h5>
-                                                                    <p>Some representative placeholder content for the
-                                                                        second
-                                                                        slide.</p>
+                                                                    <h5>Prepare-se para conquistar novos horizontes com a Toyota SW4!</h5>
+                                                                    <p>Explore o espírito aventureiro e a robustez desta SUV lendária,
+                                                                    seja nas trilhas mais desafiadoras ou nas ruas da cidade.</p>
                                                                 </div>
                                                             </div>
                                                             <div class="carousel-item">
                                                                 <img src="img/Carro 3.jpg" class="d-block w-100"
                                                                     alt="...">
                                                                 <div class="carousel-caption d-none d-md-block">
-                                                                    <h5>Third slide label</h5>
-                                                                    <p>Some representative placeholder content for the
-                                                                        third
-                                                                        slide.</p>
+                                                                    <h5>Experimente o poder absoluto da velocidade!</h5>
+                                                                    <p>Descubra o luxo e a sofisticação do lendário carro
+                                                                    Porsche em nosso site.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
