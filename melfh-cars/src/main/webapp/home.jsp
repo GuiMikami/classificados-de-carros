@@ -56,29 +56,28 @@
             <div class="container">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/Carro 1.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Ferrari.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Gosta de Carros Luxuosos ?</h5>
+                            <p>Aqui você pode vender ou comprar se carro de luxuso</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Carro 2.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Fusca.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5>Ta afim de reviver os velhos tempos?</h5>
+                            <p>Que tal poder achar que seu fusca ?</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Carro 3.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Tesla.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h5>Elon Musk !!!???</h5>
+                            <p>Consiga agora seu carro inteligente!</p>
                         </div>
                     </div>
                 </div>
             </div>
-
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -90,7 +89,7 @@
 
 
         </div>
-                <br>
+
                 <div></div>
   <h1 style="color: #fff; text-align: center;"> Ultimos Lançamentos!!! 🔥🔥🔥</h1>
         <br><br>
