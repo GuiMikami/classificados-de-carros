@@ -24,9 +24,34 @@
     </head>
     <form>
         <body>
+<<<<<<< HEAD
+        <div class="container">
+            <div class="bg-dark">
+                <div class="logo titulo">
+                    <header
+                        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
+                            <img src="img/Logo da Melph.png" width="140px" alt="">
+                        </a>
+
+                        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                            <li><a href="cadastroCarro.jsp" class="nav-link px-2 link-dark1">Vender carro</a>
+                            <li><a href="Anuncio.jsp" class="nav-link px-2 link-dark1">Comprar carro </a></li>
+                            <li><a href="sobre.html" class="nav-link px-2 link-dark1">Um pouco sobre nós</a></li>
+                        </ul>
+
+                        <div class="col-md-3 text-end">
+
+                            <a href="login.jsp"> <button type="button" class="btn btn-outline-primary me-2">Entrar</button></a>
+                             <a href="cadastroCliente.html"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
+
+                        </div>
+                    </header>
+=======
             <header>
                 <div class="logo">
                     <img src="img/Logo da Melph.png" width="140px" alt="Logo da empresa">
+>>>>>>> 05f68a2b7179760e4937d98735c17b1092ed96e0
                 </div>
                 <nav>
                     <ul>

@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:10:04 -0300] "GET / HTTP/1.1" 200 7206 http-bio-8080-exec-1 5755
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:10:09 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 302 - http-bio-8080-exec-3 1349
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:10:09 -0300] "GET /login.jsp HTTP/1.1" 200 1168 http-bio-8080-exec-5 385
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:10:45 -0300] "POST /login HTTP/1.1" 302 - http-bio-8080-exec-7 31
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:10:47 -0300] "GET /tela-perfil HTTP/1.1" 200 6497 http-bio-8080-exec-9 1888
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:10:59 -0300] "GET / HTTP/1.1" 200 7206 http-bio-8080-exec-2 427
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:01 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 302 - http-bio-8080-exec-2 7
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:01 -0300] "GET /login.jsp HTTP/1.1" 200 1168 http-bio-8080-exec-2 4
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:08 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 302 - http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:08 -0300] "GET /login.jsp HTTP/1.1" 200 1168 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:12 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 302 - http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:12 -0300] "GET /login.jsp HTTP/1.1" 200 1168 http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:15 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 302 - http-bio-8080-exec-5 5
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:11:15 -0300] "GET /login.jsp HTTP/1.1" 200 1168 http-bio-8080-exec-5 5
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:14:18 -0300] "GET / HTTP/1.1" 200 7206 http-bio-8080-exec-1 244
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:14:39 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 500 2817 http-bio-8080-exec-5 11166
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:18 -0300] "GET / HTTP/1.1" 200 7206 http-bio-8080-exec-9 13
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:19 -0300] "GET / HTTP/1.1" 200 7206 http-bio-8080-exec-9 7
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:20 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 302 - http-bio-8080-exec-9 569
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:20 -0300] "GET /login.jsp HTTP/1.1" 200 1168 http-bio-8080-exec-2 35
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:35 -0300] "POST /login HTTP/1.1" 302 - http-bio-8080-exec-6 136
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:36 -0300] "GET /tela-perfil HTTP/1.1" 200 6497 http-bio-8080-exec-6 315
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:37 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 302 - http-bio-8080-exec-6 5
+0:0:0:0:0:0:0:1 - - [21/May/2023:22:15:38 -0300] "GET /login.jsp HTTP/1.1" 200 1168 http-bio-8080-exec-6 4
+=======
 0:0:0:0:0:0:0:1 - - [21/May/2023:15:41:21 -0300] "GET / HTTP/1.1" 200 5200 http-bio-8080-exec-1 959
 0:0:0:0:0:0:0:1 - - [21/May/2023:15:41:21 -0300] "GET /home.css HTTP/1.1" 200 1486 http-bio-8080-exec-3 17
 0:0:0:0:0:0:0:1 - - [21/May/2023:15:41:21 -0300] "GET /img/Logo%20da%20Melph.png HTTP/1.1" 200 22266 http-bio-8080-exec-4 3
@@ -704,3 +730,4 @@
 0:0:0:0:0:0:0:1 - - [21/May/2023:20:43:20 -0300] "GET /login.jsp HTTP/1.1" 200 2455 http-bio-8080-exec-4 3
 0:0:0:0:0:0:0:1 - - [21/May/2023:20:43:26 -0300] "POST /login HTTP/1.1" 302 - http-bio-8080-exec-4 1
 0:0:0:0:0:0:0:1 - - [21/May/2023:20:43:26 -0300] "GET /tela-perfil HTTP/1.1" 200 3666 http-bio-8080-exec-4 4
+>>>>>>> 05f68a2b7179760e4937d98735c17b1092ed96e0

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\temp\GIT\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Login.java
 C:\temp\GIT\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\CarDAO.java
 C:\temp\GIT\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DeleteCarServlet.java
@@ -13,3 +14,39 @@ C:\temp\GIT\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcar
 C:\temp\GIT\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateCarServlet.java
 C:\temp\GIT\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DescCarServlet.java
 C:\temp\GIT\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\AnuncioServlet.java
+=======
+<<<<<<< HEAD
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\AnuncioServlet.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarPerfil.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DescCarServlet.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LogoutServlet.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\filter\AuthenticationFilter.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Cliente.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateClienteServlet.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LoginServlet.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\ClienteDAO.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarHome.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Login.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\CarDAO.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\LoginDAO.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Carro.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateCarServlet.java
+C:\Users\Leonardo\Desktop\Marco 3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DeleteCarServlet.java
+=======
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\LoginDAO.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarPerfil.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateClienteServlet.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Carro.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Login.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\ListCarHome.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LogoutServlet.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DeleteCarServlet.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\DescCarServlet.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\AnuncioServlet.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\LoginServlet.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\CarDAO.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\model\Cliente.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\dao\ClienteDAO.java
+C:\Users\guilh\OneDrive\Área de Trabalho\PI3\classificados-de-carros\melfh-cars\src\main\java\br\com\melfhcars\servlet\CreateCarServlet.java
+>>>>>>> 05f68a2b7179760e4937d98735c17b1092ed96e0
+>>>>>>> cb6750a9a6e7742bd5fe11fa398df0a6f67c2fa5
