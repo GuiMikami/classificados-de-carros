@@ -29,20 +29,14 @@ public class LoginServlet extends HttpServlet {
             String email = request.getParameter("email");
             String senha = request.getParameter("password");
 
-            var cliente = new Cliente();
-            cliente.setEmail(email);
-            cliente.setSenha(senha);
-            
-            LoginDAO usuarioDao = new LoginDAO();
-            ResultSet rsUsuarioDao = usuarioDao.validarLogin(cliente);
-            
-            if (rsUsuarioDao.next()) {
+            var cliente = new Cliente(email,senha);
 
-                HttpSession session = request.getSession();
-                session.setAttribute("UsuárioLogado", usuarioDao);
-                response.sendRedirect("/tela-perfil"); // foi aqui a alteração
+            boolean validacaoUsuario = new LoginDAO().validarLogin(cliente);
+            
+            if (validacaoUsuario) {
+                request.getSession().setAttribute("UsuarioLogado", email);
+                response.sendRedirect("/tela-perfil");
             }else{
-
 
                 String invalidPasswordMessage = "Email/Senha inválidos!";
                 String invalidPasswordColor = "red";

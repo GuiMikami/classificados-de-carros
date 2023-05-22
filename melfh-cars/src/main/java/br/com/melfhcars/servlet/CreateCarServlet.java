@@ -18,12 +18,11 @@ import java.io.IOException;
 import java.util.*;
 
 import static org.apache.commons.fileupload.servlet.ServletFileUpload.isMultipartContent;
-@WebServlet("/cadastro-carro")
+@WebServlet({"/cadastro-carro","/admin/cadastro-carro"})
 public class CreateCarServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 
 
         Map<String, String> parameters = uploadImage(request);
@@ -109,6 +108,7 @@ public class CreateCarServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/cadastroCarro.jsp");
         dispatcher.forward(req,resp);
     }
