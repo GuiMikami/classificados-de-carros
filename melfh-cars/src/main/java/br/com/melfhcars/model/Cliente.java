@@ -10,9 +10,6 @@ public class Cliente{
 
     private String logradouro;
     private String estado;
-    private String cep;
-    private String bairro;
-    private String numero;
     private String contato;
 
     private String email;

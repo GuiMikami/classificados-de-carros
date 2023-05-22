@@ -37,7 +37,7 @@
             </li>
             <li>
 
-              <a href="anuncio.html" class="nav-link text-white">
+              <a href="Anuncio.jsp" class="nav-link text-white">
                 <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
                 Comprar carro
               </a>

@@ -15,13 +15,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+        
         <link href="home.css" rel="stylesheet">
+        <link href="header.css" rel="stylesheet">
 
         <title>Página Inicial</title>
 
     </head>
     <form>
         <body>
+<<<<<<< HEAD
         <div class="container">
             <div class="bg-dark">
                 <div class="logo titulo">
@@ -44,9 +47,25 @@
 
                         </div>
                     </header>
+=======
+            <header>
+                <div class="logo">
+                    <img src="img/Logo da Melph.png" width="140px" alt="Logo da empresa">
+>>>>>>> 05f68a2b7179760e4937d98735c17b1092ed96e0
                 </div>
-            </div>
-        </div>
+                <nav>
+                    <ul>
+                        <li><a href="home.jsp" >Home</a></li>
+                        <li><a href="cadastroCarro.jsp" >Vender Carro</a></li>
+                        <li><a href="Anuncio.jsp" >Comprar Carro</a></li>
+                        <li><a href="sobre.html" >Sobre Nós</a></li>
+                    </ul>
+                </nav>
+                <div class="user">
+                    <a href="login.jsp">Entrar</a>
+                    <a href="cadastroCliente.html">Cadastrar-se</a>
+                </div>
+            </header>
         
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">

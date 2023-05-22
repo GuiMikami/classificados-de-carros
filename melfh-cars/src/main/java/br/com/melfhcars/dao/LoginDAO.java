@@ -1,7 +1,7 @@
 package br.com.melfhcars.dao;
 
 import br.com.melfhcars.model.Cliente;
-import br.com.melfhcars.model.Login;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
