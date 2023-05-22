@@ -110,7 +110,7 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	text-decoration: underline;
-}
+} 
 
 .login .register a:hover {
 	color: #b3b7f7;
@@ -123,6 +123,7 @@ body {
 	width: 100%;
 	border-radius: 5px;
 	height: 35px;
+	margin-top: 20px;
 }
 
 .entrar input[type="submit"]:hover {
