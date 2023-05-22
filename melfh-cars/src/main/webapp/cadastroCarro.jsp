@@ -13,13 +13,14 @@
       crossorigin="anonymous"></script>
     <link href="cadastroCarro.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Cadastrar Carro</title>
 
   </head>
 
   <body>
     <header>
       <div class="logo">
+      <a href="home.jsp"</a>
         <img src="img/Logo da Melph.png" width="140px" alt="Logo da empresa">
       </div>
       <nav>
