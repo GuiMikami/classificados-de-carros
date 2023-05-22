@@ -43,7 +43,7 @@ public class CarDAO {
 
     public List<Carro> mostrarCarro() {
 
-        String SQL = "SELECT TOP 5 NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO ORDER BY PLACA DESC";
+        String SQL = "SELECT TOP 4 NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO ORDER BY PLACA DESC";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
