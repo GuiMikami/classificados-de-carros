@@ -20,7 +20,7 @@
   <body>
     <header>
       <div class="logo">
-      <a href="home.jsp"</a>
+      <a href="home.jsp"></a>
         <img src="img/Logo da Melph.png" width="140px" alt="Logo da empresa">
       </div>
       <nav>
@@ -37,7 +37,7 @@
       </div>
     </header>
 
-    <div class="container">
+      <div class="container">
       <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
 
         <label for="placa">Placa:</label>

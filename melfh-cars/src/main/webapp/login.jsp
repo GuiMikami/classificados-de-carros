@@ -19,11 +19,11 @@
                     <h2>Faça seu login para iniciar a sessão</h2>
 
                     <div class="box-user">
-                        <input type="text" id="email" name="email">
+                        <input type="text" id="email" name="email" required>
                         <label>E-mail</label>
                     </div>
                     <div class="box-user">
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required>
                         <label>Senha</label>
                     </div>
                     <div class="entrar">
