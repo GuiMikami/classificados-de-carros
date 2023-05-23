@@ -78,7 +78,7 @@
                     <li><a href="/Anuncio?buscar=BMW" class="link-body-emphasis d-inline-flex text-decoration-none rounded">BMW</a></li>
                     <li><a href="/Anuncio?buscar=Hyundai" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Hyundai</a></li>
                     <li><a href="/Anuncio?buscar=Kia" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Kia</a></li>
-                    <li><a href="/Anuncio?buscar=Mazda" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Mazda</a></li>
+                    <li><a href="/Anuncio?buscar=Lamborghini" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Lamborghini</a></li>
                     <li><a href="/Anuncio?buscar=Subaru" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Subaru</a></li>
 
                 </ul>
