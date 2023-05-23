@@ -90,28 +90,28 @@
             </button>
             <div class="collapse"  id="dashboard-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2023</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2022</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2021</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2020</a></li>
-                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2019</a></li>
-                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2018</a></li>
-                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2017</a></li>
-                   <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2016</a></li>
+                    <li><a href="/Anuncio?ano=2023" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2023</a></li>
+                    <li><a href="/Anuncio?ano=2022" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2022</a></li>
+                    <li><a href="/Anuncio?ano=2021" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2021</a></li>
+                    <li><a href="/Anuncio?ano=2020" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2020</a></li>
+                   <li><a href="/Anuncio?ano=2019" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2019</a></li>
+                   <li><a href="/Anuncio?ano=2018" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2018</a></li>
+                   <li><a href="/Anuncio?ano=2017" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2017</a></li>
+                   <li><a href="/Anuncio?ano=2008" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2008</a></li>
                 </ul>
             </div>
         </li>
         <li class="mb-1">
             <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                Orders
+                Estados
             </button>
             <div class="collapse" id="orders-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
+                    <li><a href="/Anuncio?estado=Sao Paulo" class="link-body-emphasis d-inline-flex text-decoration-none rounded">São Paulo</a></li>
+                    <li><a href="/Anuncio?estado=Rio de Janeiro" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Rio de Janeiro</a></li>
+                    <li><a href="/Anuncio?estado=Bahia" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Bahia</a></li>
+                    <li><a href="/Anuncio?estado=Parana" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Parana</a></li>
+                    <li><a href="/Anuncio?estado=Para" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Pará</a></li>
                 </ul>
             </div>
         </li>
