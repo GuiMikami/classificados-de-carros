@@ -57,3 +57,11 @@ h1 {
     text-align: center;
 }
 
+.cpf-logado {
+    margin: 0 auto;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

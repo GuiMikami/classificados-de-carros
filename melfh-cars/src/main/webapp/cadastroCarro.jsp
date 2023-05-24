@@ -33,10 +33,14 @@
 
     <div class="container">
 
-      <h1>Cadastre seu carro e enco ntre compradores interessados!</h1>
+      <h1>Cadastre seu carro e encontre compradores interessados!</h1>
 
       <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
-<<<<<<< HEAD
+       
+        <div class="cpf-logado">
+          <input>CPF dono do Carro: ${sessionScope.cpfLogado} </input>
+        </div>
+
         <div class="form-row">
           <div class="form-column">
             <label for="placa">Placa:</label>
@@ -60,8 +64,9 @@
         </div>
         <div class="form-row">
           <div class="form-column">
-            <label for="km">Quilometragem:</label>
+            <label for="Km">Quilometragem:</label>
             <input type="number" id="km" name="km" maxlength="13" value="${param.km}" required>
+
           </div>
           <div class="form-column">
             <label for="valor">Preço:</label>
@@ -92,7 +97,7 @@
             <select id="documento" name="documento" required>
               <option value="">${param.documento}</option>
               <option value="emdia">Em Dia</option>
-              <option value="atrasado">Atrasado</option>
+              <option value="Atrasado">Atrasado</option>
             </select>
           </div>
           <div class="form-column">
@@ -105,84 +110,22 @@
               <option value="danificado">Danificado</option>
             </select>
           </div>
-=======
-
-        <input >CPF dono do Carro: ${sessionScope.cpfLogado} </input>
-
-        <label for="placa">Placa:</label>
-        <input type="text" id="placa" name="placa" minlength="7" maxlength="7" value="${param.placa}" required>
-
-        <label for="marca">Marca/Modelo:</label>
-        <input type="text" id="marca" name="marca" value="${param.nomeCarro}" placeholder="Modelo e Marca do seu carro"
-          required>
-
-        <label for="finalplaca">Final da Placa:</label>
-        <input type="text" id="finalplaca" name="finalplaca" maxlength="1" value="${param.finalPlaca}" required>
-
-        <label for="ano">Ano:</label>
-        <input type="text" id="ano" name="ano" value="${param.ano}" required>
-
-        <label for="Km">Quilometragem:</label>
-        <input type="number" id="km" name="km" maxlength="13" value="${param.km}" required>
-
-        <label for="valor">Preço:</label>
-        <input type="number" id="valor" step="0.01" name="valor" value="${param.valor}" required>
-
-        <label for="transmissao">Transmissão</label>
-        <select id="transmissao" name="transmissao" required>
-          <option value="">${param.transmissao}</option>
-          <option value="automatico">Automatico</option>
-          <option value="manual">Manual</option>
-        </select>
-
-        <label for="acionamento">Acionamento de rodas:</label>
-        <select id="acionamento" name="acionamento" required>
-          <option value="">${param.acionamento}</option>
-          <option value="2X4">2X4</option>
-          <option value="4x4">4X4</option>
-        </select>
-
-        <label for="documento">Os documentos do seu carro estão:</label>
-        <select id="documento" name="documento" required>
-          <option value="">${param.documento}</option>
-          <option value="emdia">Em Dia</option>
-          <option value="Atrasado">Atrasado</option>
-        </select>
-
-        <label for="condicao">Condição que seu carro se encontra?</label>
-        <select id="condicao" name="condicao" required>
-          <option value="">${param.condicoes}</option>
-          <option value="novo">Novo</option>
-          <option value="usado">Usado</option>
-          <option value="regular">Regular</option>
-          <option value="danificado">Danificado</option>
-        </select>
-
-        <div>
-          <label for="file">Choose file</label>
-          <input type="file" name="file" id="file" accept="image/jpeg" ${param.imagem}>
->>>>>>> 8dbfd25f6a030148dce52b6dcf116b61b2abd7e9
         </div>
-
         <div class="form-row">
           <div class="form-column">
-            <label for="file">Escolher arquivo:</label>
+            <label for="file">Choose file</label>
             <input type="file" name="file" id="file" accept="image/jpeg" ${param.imagem}>
           </div>
-
           <div class="form-column">
             <label for="estado">Estado:</label>
             <input type="text" id="estado" name="estado" maxlength="40" value="${param.estado}" required>
           </div>
         </div>
-
-
         <div class="cadastrar">
           <input type="submit" value="Cadastrar">
         </div>
 
     </div>
-
     </form>
     </div>
   </body>

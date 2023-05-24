@@ -315,3 +315,23 @@
 0:0:0:0:0:0:0:1 - - [23/May/2023:22:02:51 -0300] "GET /null HTTP/1.1" 404 959 http-bio-8080-exec-5 1
 0:0:0:0:0:0:0:1 - - [23/May/2023:22:02:51 -0300] "GET /Anuncio.css HTTP/1.1" 304 - http-bio-8080-exec-3 10
 >>>>>>> 8dbfd25f6a030148dce52b6dcf116b61b2abd7e9
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:49:56 -0300] "GET / HTTP/1.1" 200 8212 http-bio-8080-exec-2 98
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:49:56 -0300] "GET /img/1684895789273-minicooper.jpg HTTP/1.1" 200 211055 http-bio-8080-exec-3 6
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:49:57 -0300] "GET /img/1684895658124-audiA4.jpg HTTP/1.1" 304 - http-bio-8080-exec-1 7
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:49:57 -0300] "GET /img/1684895901636-1684293844906-corsera%20xun[2].jpg HTTP/1.1" 200 41843 http-bio-8080-exec-4 21
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:49:57 -0300] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-7 3
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:50:00 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 200 7151 http-bio-8080-exec-8 921
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:50:05 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 200 7151 http-bio-8080-exec-9 8
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:50:05 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 200 7151 http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:50:05 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 200 7151 http-bio-8080-exec-10 5
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:50:06 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 200 7151 http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:18 -0300] "GET /login HTTP/1.1" 200 1766 http-bio-8080-exec-4 21
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:18 -0300] "GET /login.css HTTP/1.1" 304 - http-bio-8080-exec-4 6
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:18 -0300] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:26 -0300] "GET / HTTP/1.1" 200 8212 http-bio-8080-exec-4 6
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:26 -0300] "GET /img/1684895789273-minicooper.jpg HTTP/1.1" 304 - http-bio-8080-exec-4 7
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:26 -0300] "GET /img/1684895901636-1684293844906-corsera%20xun[2].jpg HTTP/1.1" 200 41843 http-bio-8080-exec-7 3
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:26 -0300] "GET /img/1684895658124-audiA4.jpg HTTP/1.1" 304 - http-bio-8080-exec-1 6
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:28 -0300] "GET /cadastroCarro.jsp HTTP/1.1" 200 7151 http-bio-8080-exec-1 10
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:28 -0300] "GET /cadastroCarro.css HTTP/1.1" 304 - http-bio-8080-exec-1 26
+0:0:0:0:0:0:0:1 - - [23/May/2023:23:51:28 -0300] "GET /img/backgroundcadastrocarro.jpg HTTP/1.1" 304 - http-bio-8080-exec-1 0
