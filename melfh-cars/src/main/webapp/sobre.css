@@ -70,11 +70,10 @@ body {
   #Chamar-no-Zap {
       justify-content: flex-end;
       position: relative;
-      left: 95px;
+      left: 60px;
       bottom: 90px;
       margin-top: 1em;
       padding: 1em 2em;
+      color: white;
+      background-color: black;
     }
-
-
-  

@@ -294,4 +294,97 @@ public class CarDAO {
             return Collections.emptyList();
         }
     }
+    public List<Carro> AnunciosAno(String ano) {
+
+        String SQL = "SELECT  NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO WHERE LOWER(ANO) LIKE ? ORDER BY PLACA DESC";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1,"%" + ano+ "%");
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Carro> cars = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String carName = resultSet.getString("NOMECARRO");
+                String carAno = resultSet.getString("ANO");
+                String carKm = resultSet.getString("KM");
+                String carEstado = resultSet.getString("ESTADO");
+                String carValor = resultSet.getString("VALOR");
+                String carFoto = resultSet.getString("FOTOCARRO");
+                String carPlaca = resultSet.getString("PLACA");
+
+
+                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado, carFoto, carPlaca);
+
+                cars.add(car);
+
+            }
+            System.out.println("success in select * car");
+
+            connection.close();
+
+            return cars;
+
+
+        } catch (Exception e) {
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+        }
+    }
+
+    public List<Carro> AnunciosEstado(String estado) {
+
+        String SQL = "SELECT  NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,PLACA FROM CARRO WHERE LOWER(ESTADO) LIKE ? ORDER BY PLACA DESC";
+
+        try {
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+
+            System.out.println("success in database connection");
+
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1,"%" + estado.toLowerCase()+ "%");
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            List<Carro> cars = new ArrayList<>();
+
+            while (resultSet.next()) {
+
+                String carName = resultSet.getString("NOMECARRO");
+                String carAno = resultSet.getString("ANO");
+                String carKm = resultSet.getString("KM");
+                String carEstado = resultSet.getString("ESTADO");
+                String carValor = resultSet.getString("VALOR");
+                String carFoto = resultSet.getString("FOTOCARRO");
+                String carPlaca = resultSet.getString("PLACA");
+
+
+                Carro car = new Carro(carName, carAno, carKm, carValor, carEstado, carFoto, carPlaca);
+
+                cars.add(car);
+
+            }
+            System.out.println("success in select * car");
+
+            connection.close();
+
+            return cars;
+
+
+        } catch (Exception e) {
+            System.out.println("fail in database connection");
+
+            return Collections.emptyList();
+        }
+    }
 }

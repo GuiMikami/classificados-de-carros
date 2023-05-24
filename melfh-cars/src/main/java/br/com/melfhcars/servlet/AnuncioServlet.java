@@ -20,13 +20,23 @@ public class AnuncioServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String busca = req.getParameter("buscar");
+        String ano = req.getParameter("ano");
+        String estado = req.getParameter("estado");
 
         System.out.println(busca);
 
-        if (busca != null && !busca.isEmpty()) {
+        if (busca != null && !busca.isEmpty() && ano==null && estado==null) {
             List<Carro> pesquisa = new CarDAO().Anuncios(busca);
             req.setAttribute("cars", pesquisa);
-        } else {
+
+        } else if(ano!=null && !ano.isEmpty()){
+            List<Carro> pesquisaAno = new CarDAO().AnunciosAno(ano);
+            req.setAttribute("cars",pesquisaAno);
+
+        }else if(estado!=null && !estado.isEmpty()){
+            List<Carro> pesquisaEstado = new CarDAO().AnunciosAno(ano);
+            req.setAttribute("cars",pesquisaEstado);
+        }else {
             List<Carro> cars = new CarDAO().mostrarCarro();
             req.setAttribute("cars", cars);
         }
