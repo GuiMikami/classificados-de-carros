@@ -22,7 +22,7 @@
     <form>
         <body>
         <div class="container">
-            <div class="bg-dark">
+            <div class="">
                 <div class="logo titulo">
                     <header
                         class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">

@@ -38,7 +38,9 @@ public class CreateCarServlet extends HttpServlet {
         String documento = parameters.get("documento");
         String condicao = parameters.get("condicao");
         String fotoCarro = parameters.get("image");
-        String CpfLogado = parameters.get("cpfLogado");
+        String cpfLogado = parameters.get("cpfLogado");
+
+        System.out.println(cpfLogado);
 
         var carro = new Carro();
         carro.setPlaca(placa.toUpperCase().trim());

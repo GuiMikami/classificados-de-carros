@@ -41,13 +41,14 @@
 
       <h1>Cadastre seu carro e encontre compradores interessados!</h1>
 
+
+
+      <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
+
             <div class="cpf-logado">
             <label for="cpf">CPF dono do Carro: </label>
               <input type="text" name="cpf" value="${sessionScope.cpfLogado}" readonly></input>
             </div>
-
-
-      <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
 
 
         <div class="form-row">
