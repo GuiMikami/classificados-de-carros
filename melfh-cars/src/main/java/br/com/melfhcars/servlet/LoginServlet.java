@@ -28,6 +28,7 @@ public class LoginServlet extends HttpServlet {
         try {
             String email = request.getParameter("email");
             String senha = request.getParameter("password");
+            LoginDAO clienteCpf = new LoginDAO();
 
             var cliente = new Cliente(email,senha);
 
@@ -36,6 +37,8 @@ public class LoginServlet extends HttpServlet {
             if (validacaoUsuario) {
                 request.getSession().setAttribute("UsuarioLogado", email);
                 response.sendRedirect("/tela-perfil");
+                String cpfLogado = clienteCpf.clinteCpf(cliente);
+                request.getSession().setAttribute("cpfLogado",cpfLogado);
             }else{
 
                 String invalidPasswordMessage = "Email/Senha inválidos!";

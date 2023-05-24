@@ -40,6 +40,8 @@
       <div class="container">
       <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
 
+        <input >CPF dono do Carro: ${sessionScope.cpfLogado} </input>
+
         <label for="placa">Placa:</label>
         <input type="text" id="placa" name="placa" minlength="7" maxlength="7" value="${param.placa}" required>
 
