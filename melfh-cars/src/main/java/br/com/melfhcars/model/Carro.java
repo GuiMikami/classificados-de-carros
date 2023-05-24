@@ -20,6 +20,8 @@ public class Carro {
     private String condicoes;
     private String fotoCarro;
 
+    private String CpfLogado;
+
     public Carro() {
     }
 
@@ -164,5 +166,13 @@ public class Carro {
 
     public void setCondicoes(String condicoes) {
         this.condicoes = condicoes;
+    }
+
+    public String getCpfLogado() {
+        return CpfLogado;
+    }
+
+    public void setCpfLogado(String cpfLogado) {
+        CpfLogado = cpfLogado;
     }
 }

@@ -12,6 +12,12 @@
         </head>
 
         <body>
+
+        <%
+        if (session.getAttribute("cpfLogado") != null) {
+            response.sendRedirect("/tela-perfil");
+        }
+        %>
             <div class="login">
                 <form action="/login" method="post">
                     <img src="img/Logo da Melph.png" width="140px" alt="">

@@ -9,9 +9,15 @@
     <link href="cadastroCarro.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
     <title>Cadastrar Carro</title>
+
+
   </head>
 
   <body>
+  <%
+      if (session.getAttribute("cpfLogado") != null) {
+      %>
+
     <header>
       <div class="logo">
         <a href="home.jsp"></a>
@@ -35,11 +41,14 @@
 
       <h1>Cadastre seu carro e encontre compradores interessados!</h1>
 
+            <div class="cpf-logado">
+            <label for="cpf">CPF dono do Carro: </label>
+              <input type="text" name="cpf" value="${sessionScope.cpfLogado}" readonly></input>
+            </div>
+
+
       <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
-       
-        <div class="cpf-logado">
-          <input>CPF dono do Carro: ${sessionScope.cpfLogado} </input>
-        </div>
+
 
         <div class="form-row">
           <div class="form-column">
@@ -128,6 +137,12 @@
     </div>
     </form>
     </div>
+    <%
+        } else {
+
+            response.sendRedirect("login.jsp");
+        }
+        %>
   </body>
 
 </html>
