@@ -14,6 +14,8 @@ public class CreateClienteServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        request.setCharacterEncoding("UTF-8");
+
         String clienteName = request.getParameter("nome");
         String cpf = request.getParameter("cpf");
         String email = request.getParameter("email");

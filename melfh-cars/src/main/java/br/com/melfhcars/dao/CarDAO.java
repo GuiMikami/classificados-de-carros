@@ -198,9 +198,9 @@ public class CarDAO {
 
 
     }
-    public List<Carro> tebelaCarroPerfil() {
+    public List<Carro> tebelaCarroPerfil(String cpf) {
 
-        String SQL = "SELECT PLACA, NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,TRANSMISSAO,ACIONAMENTO,DOCUMENTO,CONDICAO,FINALPLACA FROM CARRO ORDER BY PLACA DESC";
+        String SQL = "SELECT PLACA, NOMECARRO, ANO, KM, VALOR, ESTADO,FOTOCARRO,TRANSMISSAO,ACIONAMENTO,DOCUMENTO,CONDICAO,FINALPLACA FROM CARRO WHERE CPF = ?  ORDER BY PLACA DESC";
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
@@ -208,6 +208,8 @@ public class CarDAO {
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1,cpf);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
