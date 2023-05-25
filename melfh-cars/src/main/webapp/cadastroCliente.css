@@ -36,21 +36,24 @@ input {
     padding: 10px;
     border-color: white;
 }
-button{
-      justify-content: flex-end;
-      position: relative;
-      left: 569px;
-      bottom: 10px;
-      margin-top: 1em;
-      padding: 1em 2em;
-      color: white;
-      background-color: green;
+
+button {
+ 
+    
+    margin-top: 27px;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 8px;
+    width: 100%;
 }
+
 .form-row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     color: white;
+    
 }
 
 .form-column {
@@ -68,3 +71,8 @@ select {
     width: 100%;
     box-sizing: border-box;
 }
+
+h1{
+    text-align: center;  
+}
+

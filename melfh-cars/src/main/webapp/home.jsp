@@ -59,21 +59,21 @@
                         <img src="img/Ferrari.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Gosta de Carros Luxuosos ?</h5>
-                            <p>Aqui você pode vender ou comprar se carro de luxuso</p>
+                            <p>Aqui você pode vender ou comprar seu carro de luxuoso</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/Fusca.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Ta afim de reviver os velhos tempos?</h5>
-                            <p>Que tal poder achar que seu fusca ?</p>
+                            <h5>Está afim de reviver os velhos tempos?</h5>
+                            <p>Que tal poder achar o seu fusca ?</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/Tesla.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Elon Musk !!!???</h5>
-                            <p>Consiga agora seu carro inteligente!</p>
+                            <h5>Conhece Elon Musk!!!???</h5>
+                            <p>Ta fabricando seu possivel carro!</p>
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,6 @@ body {
 }
 
 .container {
-
     justify-content: space-between;
     margin-top: 100px;
     margin: 100px;
@@ -60,8 +59,18 @@ h1 {
 .cpf-logado {
     margin: 0 auto;
     color: white;
-    width: 50%;
+    width: 200px;
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
 }
+
+.cadastrar{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-color: green;
+}
+

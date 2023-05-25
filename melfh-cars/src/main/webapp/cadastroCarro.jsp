@@ -14,42 +14,37 @@
   </head>
 
   <body>
-  <%
-      if (session.getAttribute("cpfLogado") != null) {
-      %>
+    <% if (session.getAttribute("cpfLogado") !=null) { %>
 
-    <header>
-      <div class="logo">
-        <a href="home.jsp"></a>
-        <img src="img/Logo da Melph.png" width="140px" alt="Logo da empresa">
-      </div>
-      <nav>
-        <ul>
-          <li><a href="home.jsp">Home</a></li>
-          <li><a href="cadastroCarro.jsp">Vender Carro</a></li>
-          <li><a href="Anuncio.jsp">Comprar Carro</a></li>
-          <li><a href="sobre.html">Sobre Nós</a></li>
-        </ul>
-      </nav>
-      <div class="user">
-        <a href="login.jsp">Entrar</a>
-        <a href="cadastroCliente.html">Cadastrar-se</a>
-      </div>
-    </header>
+      <header>
+        <div class="logo">
+          <a href="home.jsp"></a>
+          <img src="img/Logo da Melph.png" width="140px" alt="Logo da empresa">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="home.jsp">Home</a></li>
+            <li><a href="cadastroCarro.jsp">Vender Carro</a></li>
+            <li><a href="Anuncio.jsp">Comprar Carro</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+          </ul>
+        </nav>
+        <div class="user">
+          <a href="login.jsp">Entrar</a>
+          <a href="cadastroCliente.html">Cadastrar-se</a>
+        </div>
+      </header>
 
-    <div class="container">
+      <div class="container">
 
-      <h1>Cadastre seu carro e encontre compradores interessados!</h1>
+        <h1>Cadastre seu carro e encontre compradores interessados!</h1>
 
+        <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
 
-
-      <form action="/cadastro-carro" method="post" enctype="multipart/form-data">
-
-            <div class="cpf-logado">
-            <label for="cpf">CPF dono do Carro: </label>
-              <input type="text" name="cpf" value="${sessionScope.cpfLogado}" readonly></input>
-            </div>
-
+        <div class="cpf-logado">
+          <label for="cpf">CPF dono do Carro: </label>
+          <input class="cpf-logado" style="text-align: center; color: black; font-weight: bold;"  type="text" name="cpf" value="${sessionScope.cpfLogado}" id="cpfLogado" readonly></input>
+        </div>
 
         <div class="form-row">
           <div class="form-column">
@@ -131,19 +126,12 @@
             <input type="text" id="estado" name="estado" maxlength="40" value="${param.estado}" required>
           </div>
         </div>
-        <div class="cadastrar">
-          <input type="submit" value="Cadastrar">
-        </div>
+        <div class="cadastrar"><input type="submit" value="Cadastrar"></div>
+      </div>
+      </form>
+      </div>
+      <% } else { response.sendRedirect("login.jsp"); } %>
 
-    </div>
-    </form>
-    </div>
-    <%
-        } else {
-
-            response.sendRedirect("login.jsp");
-        }
-        %>
   </body>
 
 </html>

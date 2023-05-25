@@ -24,6 +24,7 @@ public class CreateCarServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        String cpfLogado = (String) request.getSession().getAttribute("cpfLogado");
 
         Map<String, String> parameters = uploadImage(request);
         String placa = parameters.get("placa");
@@ -38,7 +39,7 @@ public class CreateCarServlet extends HttpServlet {
         String documento = parameters.get("documento");
         String condicao = parameters.get("condicao");
         String fotoCarro = parameters.get("image");
-        String cpfLogado = parameters.get("cpfLogado");
+
 
         System.out.println(cpfLogado);
 
@@ -55,7 +56,7 @@ public class CreateCarServlet extends HttpServlet {
         carro.setCondicoes(condicao);
         carro.setDocumento(documento);
         carro.setTransmissao(transmissao);
-
+        carro.setCpfLogado(cpfLogado);
 
         var carroDAO = new CarDAO();
         carroDAO.createCar(carro);
