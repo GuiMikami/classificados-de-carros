@@ -5,9 +5,6 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
   background-color: black;
   display: flex;
   justify-content: space-between;
