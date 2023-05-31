@@ -30,7 +30,7 @@
         </nav>
         <div class="user">
           <a href="login.jsp">Entrar</a>
-          <a href="cadastroCliente.html">Cadastrar-se</a>
+          <a href="cadastroCliente.jsp">Cadastrar-se</a>
         </div>
       </header>
 

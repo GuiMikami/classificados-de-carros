@@ -68,7 +68,7 @@ public class CreateCarServlet extends HttpServlet {
             carroDAO.atualizarCarro(carro);
         }
 
-        request.getRequestDispatcher("cadastroCarro.jsp").forward(request, response);
+   response.sendRedirect("/tela-perfil");
 
     }
 

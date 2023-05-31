@@ -2,9 +2,7 @@ package br.com.melfhcars.dao;
 import br.com.melfhcars.model.Cliente;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
+import java.sql.*;
 
 public class ClienteDAO {
     public void createCliente(Cliente cliente) {
@@ -31,6 +29,52 @@ public class ClienteDAO {
             System.out.println(e);
             System.out.println("Fail in connection");
         }
+    }
+    public boolean verificarEmailExistente(String email) {
+        try {
+
+            Connection connection = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
+
+
+            String sql = "SELECT COUNT(*) FROM CLIENTE WHERE EMAIL = ?";
+            PreparedStatement statement = connection.prepareStatement(sql);
+            statement.setString(1, email);
+
+
+            ResultSet resultSet = statement.executeQuery();
+
+            if (resultSet.next()) {
+                int count = resultSet.getInt(1);
+                return count > 0;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+    public boolean verificarCPFExistente(String cpf) {
+        try {
+
+            Connection conn = DriverManager.getConnection("jdbc:h2:~/test","sa","sa");
+
+
+            String sql = "SELECT COUNT(*) FROM CLIENTE WHERE CPF = ?";
+            PreparedStatement statement = conn.prepareStatement(sql);
+            statement.setString(1, cpf);
+
+            ResultSet resultSet = statement.executeQuery();
+
+
+            if (resultSet.next()) {
+                int count = resultSet.getInt(1);
+                return count > 0;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 
 

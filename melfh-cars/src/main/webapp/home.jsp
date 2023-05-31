@@ -39,7 +39,7 @@
                         <div class="col-md-3 text-end">
 
                             <a href="login.jsp"> <button type="button" class="btn btn-outline-primary me-2">Entrar</button></a>
-                             <a href="cadastroCliente.html"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
+                             <a href="cadastroCliente.jsp"><button type="button" class="btn btn-primary">Cadastrar-se</button></a>
 
                         </div>
                     </header>
