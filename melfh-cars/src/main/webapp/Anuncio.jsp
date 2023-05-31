@@ -1,6 +1,6 @@
 <%@page import="java.util.List"%>
 <%@page import="br.com.melfhcars.model.Carro"%>
-<% List<Carro> listaCars = (List<Carro>) request.getAttribute("cars");%>
+<% List<Carro> listarCarro = (List<Carro>) request.getAttribute("cars");%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
@@ -121,29 +121,29 @@
 
             <div class="conatiner-fluid d-flex flex-wrap ">
 
-                <% if (listaCars != null) { %>
-                   <% for (int i = 0; i < listaCars.size(); i++) { %>
+                <% if (listarCarro != null) { %>
+                   <% for (int i = 0; i < listarCarro.size(); i++) { %>
 
                 <div class="card" style="width: 18rem;">
-                    <img src= "<%=listaCars.get(i).getFotoCarro()%>" class="card-img-top" alt="...">
+                    <img src= "<%=listarCarro.get(i).getFotoCarro()%>" class="card-img-top" alt="...">
                     <div class="card-body">
 
                         <h5 class="card-title">
-                            <%=listaCars.get(i).getNomeCarro()%>
+                            <%=listarCarro.get(i).getNomeCarro()%>
                         </h5>
 
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <label><%=listaCars.get(i).getAno()%></label>
+                            <label><%=listarCarro.get(i).getAno()%></label>
                             <label> - </label>
-                            <label><%=listaCars.get(i).getKm()%>Km</label>
+                            <label><%=listarCarro.get(i).getKm()%>Km</label>
                             <label> - </label>
-                            <label><%=listaCars.get(i).getEstado()%></label>
+                            <label><%=listarCarro.get(i).getEstado()%></label>
                         </li>
                     </ul>
                     <div class="card-body">
-                        <a href="/descricao-carro?placa=<%=listaCars.get(i).getPlaca()%>" class="card-link">R$ <%=listaCars.get(i).getValor()%></a>
+                        <a href="/descricao-carro?placa=<%=listarCarro.get(i).getPlaca()%>" class="card-link">R$ <%=listarCarro.get(i).getValor()%></a>
 
                     </div>
                 </div>

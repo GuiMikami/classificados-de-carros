@@ -37,8 +37,8 @@ public class AnuncioServlet extends HttpServlet {
             List<Carro> pesquisaEstado = new CarDAO().AnunciosAno(ano);
             req.setAttribute("cars",pesquisaEstado);
         }else {
-            List<Carro> cars = new CarDAO().mostrarCarro();
-            req.setAttribute("cars", cars);
+            List<Carro> listarCarro = new CarDAO().Anuncios("");
+            req.setAttribute("cars", listarCarro);
         }
 
         req.getRequestDispatcher("Anuncio.jsp").forward(req, resp);
