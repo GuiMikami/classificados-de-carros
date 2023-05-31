@@ -7,11 +7,15 @@ header {
 
 body {
     background-color: #e9e9e9;
+    padding: 80px;
 }
 
 .sidebar {
+    margin: 0;
+    margin-left: 0;
      background-color: black;
      width: 280px;
+    
  }
  .sidebar * {
      color: white;
@@ -69,6 +73,19 @@ margin-left:20px;
   }
 
 
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    z-index: 10;
+}
 
 
 
