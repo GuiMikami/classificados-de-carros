@@ -37,7 +37,17 @@ label {
 }
 
 header {
-    margin-bottom: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    z-index: 10;
 }
 
 input,
@@ -67,10 +77,9 @@ h1 {
     justify-content: center;
 }
 
-.cadastrar{
+.cadastrar {
     background-color: green;
     color: white;
     font-weight: bold;
     border-color: green;
 }
-
